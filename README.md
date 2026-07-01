@@ -50,3 +50,12 @@ please think about the directionality: `x` produced `y`, thus the connection sho
 
 - i wanna change out the maniadb links to youtube videos where it's possible (especially for groups and solo artists)
 - more people, more groups!!! (it's kind of ok if the source is "trust me bro", and it's also totally ok if it's regarding groups outside of seoul)
+
+## ideas/roadmap
+
+- [x] more concise way to define groups and people and the connections between them
+- [ ] support urls for links
+- [ ] click node to show neighborhood (will break urls), click anywhere else to clear neighborhood view
+- [ ] support more urls for nodes
+- [ ] click node to open a sidebar (desktop)/drawer (mobile) showing any urls associated to the node
+- [ ] click edge to open a sidebar (desktop)/drawer (mobile) showing any urls associated to the link
