@@ -15,7 +15,7 @@ nodes:
   connects_to:
   - string # another nodes[].id
   - target: string # another nodes[].id
-    label: string # Produced|Remixed|Featured|Collaborated with|Sound director for|Gave lessons to, but also anything else like 2014-2017, the years in which a person was in a band
+    label: string # Produced|Remixed|Featured|Collaborated with|Sound director for|Gave lessons to, but also anything else like 2014-2017, the years in which a person was in a grouop
 ```
 
 ## contributing
@@ -25,7 +25,7 @@ to change relationships, add people or groups, edit `data/seoul_indie.yaml` and 
 ### stuff that should be noted if you want to add nodes or edges
 
 please think about the directionality: `x` produced `y`, thus the connection should lie with `x`, to `y`. no connections are necessarily going out of `y`.
-`x` could also be a member of the group `z`, which is also a connection _from_ `x` to `z`.
+`x` could also be a member of the group `z`, which is also a connection _from_ `x` to `z`. that said, "Collaborated with" is a label type that doesn't care about directionality, but it should be defined once, from `x` to `y` or from `y` to `x` but not both at the same time.
 
 ```yaml
 - id: x
