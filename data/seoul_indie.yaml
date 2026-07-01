@@ -466,6 +466,10 @@ nodes:
   type: group
   name: Lilly Eat Machine
   url: https://linktr.ee/lillyeatmachine
+- id: wall_wall
+  type: group
+  name: WALL WALL
+  url: https://www.youtube.com/watch?v=hourfuFcI4I
 # ------
 # People
 # ------
@@ -549,6 +553,9 @@ nodes:
   - sokot_band
   - target: byul_org
     label: 2000-2021
+  - wall_wall
+  - target: haepa
+    label: Produced
 - id: ninaian
   type: person
   name: 박현민 (Ninaian)
@@ -955,6 +962,7 @@ nodes:
   - sunkyeol
   - 404_band
   - lang_lee
+  - wall_wall
 - id: lee_wonyeol
   type: person
   name: 이원열 (Lee Wonyeol)
@@ -1235,3 +1243,17 @@ nodes:
   url: ''
   connects_to:
   - lilly_eat_machine
+- id: yeong_die
+  type: person
+  name: 영다이 (Yeong Die)
+  url: 'https://www.instagram.com/lildead19'
+  connects_to:
+  - wall_wall
+  - target: guinneissik
+    label: Featured
+  - target: jowall
+    label: Featured
+- id: haepa
+  type: person
+  name: 해파 (Haepa)
+  url: 'https://www.instagram.com/steadyhaepa'
