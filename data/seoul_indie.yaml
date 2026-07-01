@@ -957,7 +957,7 @@ nodes:
 - id: cho_inchul
   type: person
   name: 조인철 (Cho Inchul)
-  url: ''
+  url: 'https://www.instagram.com/zoturr/'
   connects_to:
   - sunkyeol
   - 404_band
