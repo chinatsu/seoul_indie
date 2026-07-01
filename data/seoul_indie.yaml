@@ -898,7 +898,8 @@ nodes:
   url: http://www.maniadb.com/artist/437635
   connects_to:
   - se_so_neon
-  - byul_org
+  - target: byul_org
+    label: 2018-
   - target: mid-air_thief
     label: Featured
 - id: mid-air_thief
