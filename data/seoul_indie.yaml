@@ -494,6 +494,10 @@ nodes:
   type: group
   name: The Near East Quartet (더 니어 이스트 쿼텟)
   url: https://www.youtube.com/watch?v=wwnWwIo18QE
+- id: aespa
+  type: group
+  name: aespa
+  url: https://www.instagram.com/aespa_official/
 # ------
 # People
 # ------
@@ -1335,3 +1339,18 @@ nodes:
   - near_east_quartet
   - target: shadow_community
     label: Sessioned for
+- id: kim_ekah
+  type: person
+  name: 에카킴 (Ekah Kim)
+  url: 'https://www.instagram.com/ekah_kim/'
+  connects_to:
+  - target: shadow_community
+    label: Sessioned for
+  - target: winter
+    label: Sessioned for
+- id: winter
+  type: person
+  name: 윈터 (Winter)
+  url: 'https://www.instagram.com/imwinter/'
+  connects_to:
+  - aespa
