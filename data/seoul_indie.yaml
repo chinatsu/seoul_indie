@@ -1,0 +1,1216 @@
+ 
+nodes:
+# ------
+# Groups
+# ------
+- id: daydream
+  type: group
+  name: 데이드림 (Daydream)
+  url: https://www.youtube.com/watch?v=SeeH3YffpNM&t=1546s
+- id: electricity_flowing
+  type: group
+  name: 전기흐른 (Electricity Flowing)
+  url: https://www.youtube.com/watch?v=Ayl5hUiIFgk
+- id: frenzy
+  type: group
+  name: 프렌지 (Frenzy)
+  url: https://www.youtube.com/watch?v=KPb4H4IsLKk
+- id: isle
+  type: group
+  name: isle
+  url: https://www.youtube.com/watch?v=fq9eu3dFaO4
+- id: siwarainbow
+  type: group
+  name: 시와무지개 (Siwarainbow)
+  url: https://www.youtube.com/watch?v=0XLR1L7reJQ
+- id: adultchild
+  type: group
+  name: 어른아이 (Adultchild)
+  url: https://www.youtube.com/watch?v=dRaqtelO7Io
+- id: sklaventanz
+  type: group
+  name: SklavenTanz
+  url: https://soundcloud.com/sklaventanz
+- id: vomit_tear
+  type: group
+  name: Vomit & Tear
+  url: https://www.youtube.com/watch?v=mISd1D7_Ahw
+- id: nervous_shirt
+  type: group
+  name: Nervous Shirt
+  url: https://www.youtube.com/watch?v=TDVCa3EkUf4
+- id: sokot_band
+  type: group
+  name: 우리는 속옷도 생겼고 여자도 늘었다네 (Sokot band)
+  url: https://www.youtube.com/watch?v=ykBMnixAAAE
+- id: byul_org
+  type: group
+  name: 모임 별 (Byul.org)
+  url: https://www.youtube.com/watch?v=BZtWwwKeqXQ
+- id: pds
+  type: group
+  name: Puredigitalsilence
+  url: https://www.youtube.com/watch?v=yjHnLqptdEY
+- id: morphines
+  type: group
+  name: 49 Morphines
+  url: https://www.youtube.com/watch?v=ITmOBFklwjc
+- id: hollow_jan
+  type: group
+  name: Hollow Jan
+  url: https://www.youtube.com/watch?v=JmPkLx-27Gw
+- id: jambinai
+  type: group
+  name: Jambinai
+  url: https://www.youtube.com/watch?v=wEk0YlYEJAE
+- id: delispice
+  type: group
+  name: Delispice
+  url: https://www.youtube.com/watch?v=5KAjcEucAT0
+- id: omega_3
+  type: group
+  name: Omega 3
+  url: https://www.youtube.com/watch?v=3A6E0UwQ0kA
+- id: bulssazo
+  type: group
+  name: 불싸조 (Bulssazo)
+  url: https://www.youtube.com/watch?v=UAUpZzdTFls
+- id: pretty_hwang_band
+  type: group
+  name: 황신혜밴드 (Pretty Hwang Band)
+  url: https://www.youtube.com/watch?v=pCgmj7LwUqY
+- id: misoni
+  type: group
+  name: 미선이 (Misoni)
+  url: https://www.youtube.com/watch?v=ISInjAh-uFk
+- id: 9_and_numbers
+  type: group
+  name: 9와 숫자들 (9 and the Numbers)
+  url: https://www.youtube.com/watch?v=0tJjrSaxq0k
+- id: electron_sheep
+  type: group
+  name: 전자양 (Electron Sheep)
+  url: https://www.youtube.com/watch?v=CjMrKHO1wvQ
+- id: julia_hart
+  type: group
+  name: 줄리아하트 (Julia Hart)
+  url: https://www.youtube.com/watch?v=l0Fasn1lYdM
+  connects_to:
+  - target: erena_jung
+    label: Featured
+- id: autumn_vacation
+  type: group
+  name: 가을방학 (Autumn Vacation)
+  url: https://www.youtube.com/watch?v=_JZtNfmABl4
+- id: yeongene_and_bmx_bandits
+  type: group
+  name: 연진 앤드 비엠엑스 밴디츠 (Yeongene & BMX Bandits)
+  url: https://www.youtube.com/watch?v=rzALHJBgtNo
+- id: broccoli_you_too
+  type: group
+  name: 브로콜리 너마저 (Broccoli,you too)
+  url: https://www.youtube.com/watch?v=mSd3dbU9RWg
+- id: linus_blanket
+  type: group
+  name: 라이너스의 담요 (Linus' Blanket)
+  url: https://www.youtube.com/watch?v=77YJUIgP2n4
+- id: parasol
+  type: group
+  name: 파라솔 (Parasol)
+  url: https://www.youtube.com/watch?v=87nxRT7fTdw
+- id: trampauline
+  type: group
+  name: 트램폴린 (Trampauline)
+  url: https://www.youtube.com/watch?v=LMS1XHPXULk
+- id: bluestream
+  type: group
+  name: 푸르내 (Bluestream)
+  url: https://www.youtube.com/watch?v=mCmOHecyGYQ
+- id: 3rd_line_butterfly
+  type: group
+  name: 3호선 버터플라이 (3rd Line Butterfly)
+  url: https://www.youtube.com/watch?v=DlQvaV2B7VI
+- id: huckleberry_finn
+  type: group
+  name: 허클베리 핀 (Huckleberry Finn)
+  url: https://www.youtube.com/watch?v=-xFDquLoNv4
+- id: 99_band
+  type: group
+  name: '99'
+  url: http://www.maniadb.com/artist/100046
+- id: h2o
+  type: group
+  name: H2O
+  url: http://www.maniadb.com/artist/114009
+- id: pakk
+  type: group
+  name: PAKK
+  url: http://www.maniadb.com/artist/426839
+- id: the_freaks
+  type: group
+  name: 얄개들 (The Freaks)
+  url: http://www.maniadb.com/artist/379162
+- id: loros
+  type: group
+  name: 로로스 (Loro's)
+  url: http://www.maniadb.com/artist/136963
+- id: zzzaam
+  type: group
+  name: 잠 (ZzzAam)
+  url: http://www.maniadb.com/artist/114982
+- id: the_patience
+  type: group
+  name: The Patience
+  url: http://www.maniadb.com/artist/135597
+- id: firestorm
+  type: group
+  name: Firestorm
+  url: http://www.maniadb.com/artist/143922
+- id: sisters_barbershop
+  type: group
+  name: 언니네 이발관 (Sister's Barbershop)
+  url: http://www.maniadb.com/artist/106912
+- id: cosmos
+  type: group
+  name: 코스모스 (Cosmos)
+  url: http://www.maniadb.com/artist/113764
+- id: 13_steps
+  type: group
+  name: 13 스텝스 (13 Steps)
+  url: http://www.maniadb.com/artist/100008
+- id: 100_blossom_club
+  type: group
+  name: 백화난만조 (One Hundred Blossom Club)
+  url: http://www.maniadb.com/artist/413391
+- id: cockrasher
+  type: group
+  name: Cockrasher
+  url: http://www.maniadb.com/artist/136177
+- id: ok_punk
+  type: group
+  name: OK PUNK!
+  url: http://www.maniadb.com/artist/405904
+- id: wittgenstein
+  type: group
+  name: Wittgenstein
+  url: http://www.maniadb.com/artist/114926
+- id: nodance
+  type: group
+  name: 노땐스 (Nodance)
+  url: http://www.maniadb.com/artist/103142
+- id: mo_tet
+  type: group
+  name: mo:tet
+  url: http://www.maniadb.com/artist/155305
+- id: nohys
+  type: group
+  name: 노이스 (Nohys)
+  url: http://www.maniadb.com/artist/507950
+- id: casker
+  type: group
+  name: 캐스커 (Casker)
+  url: http://www.maniadb.com/artist/112371
+- id: bamshinsa
+  type: group
+  name: 밤신사 (Bamshinsa)
+  url: http://www.maniadb.com/artist/421200
+- id: leenalchi
+  type: group
+  name: 이날치 (Leenalchi)
+  url: http://www.maniadb.com/artist/456184
+- id: bogsunga
+  type: group
+  name: 복숭아 (Bogsunga)
+  url: http://www.maniadb.com/artist/136030
+- id: beyond_the_age
+  type: group
+  name: 비욘드 에이지 (Beyond the Age)
+  url: http://www.maniadb.com/artist/105276
+- id: soul_take
+  type: group
+  name: 소울 테이크 (Soul Take)
+  url: http://www.maniadb.com/artist/114653
+- id: flux
+  type: group
+  name: Flux
+  url: http://www.maniadb.com/artist/113931
+- id: se_so_neon
+  type: group
+  name: 새소년 (Se So Neon)
+  url: http://www.maniadb.com/artist/430310
+- id: kiha_and_the_faces
+  type: group
+  name: 장기하와 얼굴들 (KiHa and the Faces)
+  url: http://www.maniadb.com/artist/153783
+- id: lucid_fall
+  type: group
+  name: 루시드 폴 (Lucid Fall)
+  url: http://www.maniadb.com/artist/103541
+- id: apollo_18
+  type: group
+  name: 아폴로 18 (Apollo 18)
+  url: http://www.maniadb.com/artist/156859
+- id: no_excuse
+  type: group
+  name: No Excuse
+  url: http://www.maniadb.com/artist/203265
+- id: propeller_21
+  type: group
+  name: Propeller 21
+  url: http://www.maniadb.com/artist/112637
+- id: suck_stuff
+  type: group
+  name: Suck Stuff
+  url: http://www.maniadb.com/artist/139433
+- id: skasucks
+  type: group
+  name: Skasucks
+  url: http://www.maniadb.com/artist/154994
+- id: find_the_spot
+  type: group
+  name: Find The Spot
+  url: http://www.maniadb.com/artist/238158
+- id: i_love_jh
+  type: group
+  name: I Love JH
+  url: http://www.maniadb.com/artist/155176
+- id: master_musik
+  type: group
+  name: 불길한 저음 (Master Musik)
+  url: http://www.balloonnneedle.com/mastermusik.html
+- id: sunkyeol
+  type: group
+  name: 선결 (Sunkyeol)
+  url: https://www.instagram.com/sunkyeol
+- id: 404_band
+  type: group
+  name: '404'
+  url: http://www.maniadb.com/artist/422825
+- id: bihaengsun
+  type: group
+  name: 비행선 (Bihaengsun)
+  url: http://www.maniadb.com/artist/105283
+- id: pipi_band
+  type: group
+  name: 삐삐밴드 (Pipi Band)
+  url: http://www.maniadb.com/artist/105297
+- id: wonder_bird
+  type: group
+  name: Wonder Bird
+  url: http://www.maniadb.com/artist/114928
+- id: the_monotones
+  type: group
+  name: The Monotones
+  url: http://www.maniadb.com/artist/424909
+- id: dosirak_commandos
+  type: group
+  name: 도시락특공대 (Dosirak Commandos)
+  url: http://www.maniadb.com/artist/103339
+- id: smacksoft
+  type: group
+  name: Smacksoft
+  url: http://www.maniadb.com/artist/114638
+- id: donawhale
+  type: group
+  name: Donawhale
+  url: http://www.maniadb.com/artist/138026
+- id: adoy
+  type: group
+  name: Adoy
+  url: http://www.maniadb.com/artist/196174
+- id: glamour_sol
+  type: group
+  name: Glamour Sol
+  url: http://www.maniadb.com/artist/422133
+- id: eve
+  type: group
+  name: Eve
+  url: http://www.maniadb.com/artist/113912
+- id: the_hysterics
+  type: group
+  name: The Hysteric$
+  url: http://www.maniadb.com/artist/420961
+- id: the_the
+  type: group
+  name: THe ThE
+  url: http://www.maniadb.com/artist/103294
+- id: bluedawn
+  type: group
+  name: Bluedawn
+  url: http://www.maniadb.com/artist/112612
+- id: hellivision
+  type: group
+  name: Hellivision
+  url: https://maansun.com/hellivision
+- id: kuang_program
+  type: group
+  name: 쾅프로그램 (Kuang Program)
+  url: https://maansun.com/kuangprogram
+- id: bamseom_pirates
+  type: group
+  name: 밤섬해적단 (Bamseom Pirates)
+  url: http://www.maniadb.com/artist/384576
+- id: organic_beer
+  type: group
+  name: Organic Beer
+  url: https://helicopterseoul.bandcamp.com/album/tcr-trans-continental-railway
+- id: moon_and_bouncers
+  type: group
+  name: Moon & Bouncers
+  url: https://www.youtube.com/watch?v=GmRsKQnGVnM
+- id: asoto_union
+  type: group
+  name: 아소토 유니온 (Asoto Union)
+  url: https://www.youtube.com/watch?v=oLYAfaSzLC8
+- id: social_quality
+  type: group
+  name: Social Quality
+  url: https://www.youtube.com/watch?v=olLfu1H3VKw
+- id: n_ex_t
+  type: group
+  name: N.EX.T (넥스트)
+  url: https://www.youtube.com/watch?v=09xTguEnXQk
+- id: seoul_electric_band
+  type: group
+  name: Seoul Electric Band (서울전자음악단)
+  url: http://www.maniadb.com/artist/133332
+- id: eastern_side_kick
+  type: group
+  name: Eastern Side Kick (이스턴 사이드 킥)
+  url: http://www.maniadb.com/artist/361702
+- id: baada
+  type: group
+  name: BAADA
+  url: http://www.maniadb.com/artist/489362
+- id: art_of_parties
+  type: group
+  name: Art of Parties (아트 오브 파티스)
+  url: http://www.maniadb.com/artist/252634
+- id: bank
+  type: group
+  name: Bank (뱅크)
+  url: http://www.maniadb.com/artist/105125
+- id: jazzpark_bigband
+  type: group
+  name: Jazzpark Bigband (재즈파크 빅밴드)
+  url: http://www.maniadb.com/artist/153499
+- id: mita_and_tango_bros
+  type: group
+  name: Mita & Tango Bros. (미타 앤 탱고 브로스)
+  url: http://www.maniadb.com/artist/140738
+- id: rotten_but_still_sweet
+  type: group
+  name: Rotten But Still Sweet (썩어도 준치)
+  url: http://www.maniadb.com/artist/551412
+- id: brown_eyed_soul
+  type: group
+  name: Brown Eyed Soul (브라운 아이드 소울)
+  url: http://www.maniadb.com/artist/105243
+- id: brown_eyes
+  type: group
+  name: Brown Eyes (브라운 아이즈)
+  url: http://www.maniadb.com/artist/105244
+- id: team
+  type: group
+  name: Team (팀)
+  url: http://www.maniadb.com/artist/114739
+- id: honey_family
+  type: group
+  name: Honey Family (허니패밀리)
+  url: http://www.maniadb.com/artist/113089
+- id: brown_eyed_girls
+  type: group
+  name: Brown Eyed Girls (브라운아이드걸스)
+  url: http://www.maniadb.com/artist/135308
+- id: yeonji_and_jea
+  type: group
+  name: Yeonji & JeA (연지 & 제아)
+  url: http://www.maniadb.com/artist/135308
+- id: seeya
+  type: group
+  name: See Ya (씨야)
+  url: http://www.maniadb.com/artist/134596
+- id: daughter_of_a_rich_family
+  type: group
+  name: Daughter of a Rich Family (딸부잣집)
+  url: http://www.maniadb.com/artist/471234
+- id: miss_rainbow
+  type: group
+  name: Miss Rainbow (미스 레인보우)
+  url: http://www.maniadb.com/artist/490747
+- id: bestie
+  type: group
+  name: BESTie (베스티)
+  url: http://www.maniadb.com/artist/421090
+- id: youngten
+  type: group
+  name: Youngten (영텐)
+  url: http://www.maniadb.com/artist/489048
+- id: kangjeok_kaist
+  type: group
+  name: Kangjeok KAIST (강적 KAIST)
+  url: http://www.maniadb.com/artist/135966
+- id: cotoba
+  type: group
+  name: cotoba
+  url: http://www.maniadb.com/artist/456179
+- id: chs
+  type: group
+  name: CHS
+  url: https://www.maniadb.com/artist/502788
+- id: fail_fast
+  type: group
+  name: Fail Fast
+  url: https://www.wdikorea.com/fail-fast
+# ------
+# People
+# ------
+- id: maddyxp
+  type: person
+  name: maddyxp
+  url: https://linktr.ee/maddyxp
+- id: lang_lee
+  type: person
+  name: 이랑 (Lang Lee)
+  url: http://www.maniadb.com/artist/384350
+- id: jeong_hankil
+  type: person
+  name: 정한길 (Jeong Hankil)
+  url: http://www.maniadb.com/artist/382296
+  connects_to:
+  - daydream
+  - electricity_flowing
+- id: ryu_hogeon
+  type: person
+  name: 류호건 (Ryu Hogeon)
+  url: http://www.maniadb.com/artist/421162
+  connects_to:
+  - electricity_flowing
+  - frenzy
+  - isle
+- id: flowing
+  type: person
+  name: 흐른 (Flowing)
+  url: http://www.maniadb.com/artist/138645
+  connects_to:
+  - isle
+- id: kirara
+  type: person
+  name: KIRARA
+  url: http://kirararararararara.com/
+  connects_to:
+  - target: flowing
+    label: Featured
+  - target: maddyxp
+    label: Remixed
+  - target: siwa
+    label: Remixed
+  - target: hollow_jan
+    label: Collaborated with
+- id: guinneissik
+  type: person
+  name: Guinneissik
+  url: https://linktr.ee/guinneissik
+  connects_to:
+  - target: maddyxp
+    label: Remixed
+- id: siwa
+  type: person
+  name: 시와 (Siwa)
+  url: https://linktr.ee/withsiwa
+  connects_to:
+  - siwarainbow
+- id: ryu_seunghyeon
+  type: person
+  name: 류승현 (Ryu Seunghyeon)
+  url: http://www.maniadb.com/artist/135561
+  connects_to:
+  - siwarainbow
+  - adultchild
+- id: dydsu
+  type: person
+  name: 용녀 (Dydsu)
+  url: https://www.instagram.com/dydsu
+  connects_to:
+  - sklaventanz
+  - vomit_tear
+  - nervous_shirt
+- id: jowall
+  type: person
+  name: 조월 (Jowall)
+  url: http://jowall.kr
+  connects_to:
+  - sokot_band
+  - byul_org
+- id: ninaian
+  type: person
+  name: 박현민 (Ninaian)
+  url: https://ninaian.com/
+  connects_to:
+  - sokot_band
+  - target: bulssazo
+    label: Produced
+- id: jung_jiwan
+  type: person
+  name: 정지완 (Jung Jiwan)
+  url: https://www.instagram.com/rnrterror
+  connects_to:
+  - sokot_band
+  - hellivision
+  - moon_and_bouncers
+- id: choi_taehyun
+  type: person
+  name: 최태현 (Choi Taehyun)
+  url: https://choitaehyun.tumblr.com/
+  connects_to:
+  - kuang_program
+  - target: jowall
+    label: Collaborated with
+- id: seoul_cult
+  type: person
+  name: 최원겸 (Seoul Cult)
+  url: https://www.seoulcult.com/
+  connects_to:
+  - sklaventanz
+  - vomit_tear
+- id: choi_joonyong
+  type: person
+  name: 최준용 (Choi Joonyong)
+  url: http://www.balloonnneedle.com/joonyongen.html
+  connects_to:
+  - vomit_tear
+  - pds
+  - master_musik
+- id: hong_chulki
+  type: person
+  name: 홍철기 (Hong Chulki)
+  url: http://www.balloonnneedle.com/chulkien.html
+  connects_to:
+  - pds
+  - master_musik
+- id: son_hanchang
+  type: person
+  name: 손한창 (Son Hanchang)
+  url: http://www.maniadb.com/artist/237712
+  connects_to:
+  - nervous_shirt
+  - morphines
+- id: ryu_myunghoon
+  type: person
+  name: 류명훈 (Ryu Myunghoon)
+  url: http://www.maniadb.com/artist/135723
+  connects_to:
+  - nervous_shirt
+  - morphines
+  - hollow_jan
+  - firestorm
+  - 13_steps
+  - suck_stuff
+  - skasucks
+- id: eeru
+  type: person
+  name: 이일우 (Eeru)
+  url: http://www.maniadb.com/artist/135719
+  connects_to:
+  - morphines
+  - jambinai
+  - target: pakk
+    label: Collaborated with
+  - 13_steps
+- id: choi_jehyuk
+  type: person
+  name: 최재혁 (Choi Jehyuk)
+  url: http://www.maniadb.com/artist/112190
+  connects_to:
+  - jambinai
+  - delispice
+  - omega_3
+- id: andy_yang
+  type: person
+  name: 양용준 (Andy Yang)
+  url: http://www.maniadb.com/artist/106828
+  connects_to:
+  - delispice
+  - pds
+  - cosmos
+- id: kim_mingyu
+  type: person
+  name: 김민규 (Kim Min Kyu)
+  url: http://www.maniadb.com/artist/101319
+  connects_to:
+  - delispice
+- id: jo_yunseok
+  type: person
+  name: 조윤석 (Jo Yunseok)
+  url: http://www.maniadb.com/artist/111269
+  connects_to:
+  - bulssazo
+  - pretty_hwang_band
+- id: ko_kyeongcheon
+  type: person
+  name: 고경천 (Ko Kyeongcheon)
+  url: http://www.maniadb.com/artist/100424
+  connects_to:
+  - omega_3
+  - pretty_hwang_band
+- id: yu_jeongmok
+  type: person
+  name: 유정목 (Yu Jeongmok)
+  url: http://www.maniadb.com/artist/422304
+  connects_to:
+  - 9_and_numbers
+  - frenzy
+  - electron_sheep
+- id: boy_d
+  type: person
+  name: 보이.디 (Boy.D)
+  url: http://www.maniadb.com/artist/428193
+  connects_to:
+  - 9_and_numbers
+  - julia_hart
+- id: bobby_chung
+  type: person
+  name: 정바비 (Bobby Chung)
+  url: http://www.maniadb.com/artist/110546
+  connects_to:
+  - julia_hart
+  - autumn_vacation
+  - yeongene_and_bmx_bandits
+  - sisters_barbershop
+- id: gyepi
+  type: person
+  name: 계피 (Gyepi)
+  url: http://www.maniadb.com/artist/200379
+  connects_to:
+  - autumn_vacation
+  - broccoli_you_too
+- id: yeongene
+  type: person
+  name: 연진 (Yeongene)
+  url: http://www.maniadb.com/artist/107378
+  connects_to:
+  - yeongene_and_bmx_bandits
+  - linus_blanket
+- id: kim_naeun
+  type: person
+  name: 김나은 (Kim Naeun)
+  url: http://www.maniadb.com/artist/390944
+  connects_to:
+  - julia_hart
+  - parasol
+  - trampauline
+  - i_love_jh
+- id: jeong_wonjin
+  type: person
+  name: 정원진 (Jeong Wonjin)
+  url: http://www.maniadb.com/artist/392095
+  connects_to:
+  - parasol
+  - bluestream
+  - the_freaks
+- id: seo_hyeonjeong
+  type: person
+  name: 서현정 (Seo Hyeonjeong)
+  url: http://www.maniadb.com/artist/408807
+  connects_to:
+  - byul_org
+  - 3rd_line_butterfly
+- id: nam_sang-ah
+  type: person
+  name: 남상아 (Nam Sang-Ah)
+  url: http://www.maniadb.com/artist/103054
+  connects_to:
+  - 3rd_line_butterfly
+  - huckleberry_finn
+- id: kim_seok
+  type: person
+  name: 김석 (Kim Seok)
+  url: http://www.maniadb.com/artist/138650
+  connects_to:
+  - loros
+  - 9_and_numbers
+- id: do_jaemyung
+  type: person
+  name: 도재명 (Do Jaemyung)
+  url: http://www.maniadb.com/artist/103358
+  connects_to:
+  - loros
+  - zzzaam
+- id: choe_sohui
+  type: person
+  name: 최소희 (Choe Sohui)
+  url: http://www.maniadb.com/artist/134590
+  connects_to:
+  - zzzaam
+  - 99_band
+- id: park_hyunjun
+  type: person
+  name: 박현준 (Park Hyunjun)
+  url: http://www.maniadb.com/artist/104835
+  connects_to:
+  - 99_band
+  - h2o
+  - 3rd_line_butterfly
+  - bihaengsun
+  - pipi_band
+  - wonder_bird
+  - the_monotones
+- id: lee_sangjun
+  type: person
+  name: 이상준 (Lee Sangjun)
+  url: http://www.maniadb.com/artist/135619
+  connects_to:
+  - the_patience
+  - linus_blanket
+  - no_excuse
+  - propeller_21
+- id: lee_sewook
+  type: person
+  name: 이세욱 (Lee Sewook)
+  url: http://www.maniadb.com/artist/135618
+  connects_to:
+  - firestorm
+  - the_patience
+- id: jo_yoonseok
+  type: person
+  name: 조윤석 (Jo Yoonseok)
+  url: http://www.maniadb.com/artist/111268
+  connects_to:
+  - lucid_fall
+  - misoni
+- id: seong_giwan
+  type: person
+  name: 성기완 (Seong Giwan)
+  url: http://www.maniadb.com/artist/105658
+  connects_to:
+  - 3rd_line_butterfly
+  - 99_band
+  - dosirak_commandos
+- id: lee_hyunhee
+  type: person
+  name: 이현희 (Lee Hyunhee)
+  url: http://www.maniadb.com/artist/380672
+  connects_to:
+  - 13_steps
+  - 100_blossom_club
+- id: lee_seunghan
+  type: person
+  name: 이승한 (Lee Seunghan)
+  url: http://www.maniadb.com/artist/108818
+  connects_to:
+  - 100_blossom_club
+  - cockrasher
+- id: lee_taeseon
+  type: person
+  name: 이태선 (Lee Taeseon)
+  url: http://www.maniadb.com/artist/136179
+  connects_to:
+  - cockrasher
+  - ok_punk
+- id: devin_lee
+  type: person
+  name: 데빈 (Devin Lee)
+  url: http://www.maniadb.com/artist/103308
+  connects_to:
+  - ok_punk
+  - wittgenstein
+- id: shin_haecheol
+  type: person
+  name: 신해철 (Shin Haecheol)
+  url: http://www.maniadb.com/artist/106385
+  connects_to:
+  - wittgenstein
+  - nodance
+  - n_ex_t
+- id: yoonsang
+  type: person
+  name: 윤상 (Yoonsang)
+  url: http://www.maniadb.com/artist/107915
+  connects_to:
+  - nodance
+  - mo_tet
+  - nohys
+  - target: brown_eyed_girls
+    label: Sound director for
+- id: juuno
+  type: person
+  name: 이준오 (Juuno)
+  url: http://www.maniadb.com/artist/109355
+  connects_to:
+  - nohys
+  - casker
+  - target: kirara
+    label: Gave lessons to
+- id: song_siho
+  type: person
+  name: 송시호 (Song Siho)
+  url: http://www.maniadb.com/artist/392090
+  connects_to:
+  - the_freaks
+  - bamshinsa
+- id: neo
+  type: person
+  name: 정중엽 (Neo)
+  url: http://www.maniadb.com/artist/153784
+  connects_to:
+  - bamshinsa
+  - leenalchi
+  - kiha_and_the_faces
+- id: palan_dal
+  type: person
+  name: 달파란 (Palan Dal)
+  url: http://www.maniadb.com/artist/103271
+  connects_to:
+  - bogsunga
+  - h2o
+- id: jang_younggyu
+  type: person
+  name: 장영규 (Jang Younggyu)
+  url: http://www.maniadb.com/artist/110134
+  connects_to:
+  - leenalchi
+  - bogsunga
+- id: im_whanteck
+  type: person
+  name: 임환택 (Im Whanteck)
+  url: http://www.maniadb.com/artist/110014
+  connects_to:
+  - hollow_jan
+  - beyond_the_age
+  - soul_take
+- id: jeong_dongjin
+  type: person
+  name: 정동진 (Jeong Dongjin)
+  url: http://www.maniadb.com/artist/427927
+  connects_to:
+  - soul_take
+  - flux
+- id: so_yoon
+  type: person
+  name: So!YoON!
+  url: http://www.maniadb.com/artist/437635
+  connects_to:
+  - se_so_neon
+  - byul_org
+  - target: mid-air_thief
+    label: Featured
+- id: mid-air_thief
+  type: person
+  name: 공중도둑 (Mid-Air Thief)
+  url: http://www.maniadb.com/artist/422165
+- id: han_sangchol
+  type: person
+  name: 한상철 (Han Sangchol)
+  url: https://www.instagram.com/samsicke/
+  connects_to:
+  - bulssazo
+- id: dokyo
+  type: person
+  name: Dokyo
+  url: http://www.maniadb.com/artist/135717
+  connects_to:
+  - 13_steps
+  - no_excuse
+- id: lee_donghyuk
+  type: person
+  name: 이동혁 (Lee Donghyuk)
+  url: http://www.maniadb.com/artist/237979
+  connects_to:
+  - skasucks
+  - find_the_spot
+- id: park_daham
+  type: person
+  name: 박다함 (Park Daham)
+  url: https://www.instagram.com/parkdaham
+  connects_to:
+  - master_musik
+  - target: kuang_program
+    label: Collaborated with
+- id: kyungmo_kim
+  type: person
+  name: 김경모 (Kim Kyungmo)
+  url: ''
+  connects_to:
+  - sunkyeol
+  - julia_hart
+  - target: lang_lee
+    label: Produced
+  - target: linus_blanket
+    label: Produced
+  - target: i_love_jh
+    label: Produced
+- id: cho_inchul
+  type: person
+  name: 조인철 (Cho Inchul)
+  url: ''
+  connects_to:
+  - sunkyeol
+  - 404_band
+  - lang_lee
+- id: lee_wonyeol
+  type: person
+  name: 이원열 (Lee Wonyeol)
+  url: http://www.maniadb.com/artist/109009
+  connects_to:
+  - cosmos
+  - julia_hart
+- id: erena_jung
+  type: person
+  name: 정우민 (Erena Jung)
+  url: http://www.maniadb.com/artist/110745
+  connects_to:
+  - cosmos
+- id: kim_sanghyuk
+  type: person
+  name: 김상혁 (Kim Sanghyuk)
+  url: http://www.maniadb.com/artist/101493
+  connects_to:
+  - cosmos
+- id: bolbbalgan
+  type: person
+  name: 볼빨간 (Bolbbalgan)
+  url: http://www.maniadb.com/artist/105212
+  connects_to:
+  - julia_hart
+- id: hwang_boryeong
+  type: person
+  name: 황보령 (Hwang Boryeong)
+  url: http://www.maniadb.com/artist/113423
+  connects_to:
+  - dosirak_commandos
+  - smacksoft
+- id: yoon_sunghoon
+  type: person
+  name: 윤성훈 (Yoon Sunghoon)
+  url: http://www.maniadb.com/artist/107947
+  connects_to:
+  - smacksoft
+  - donawhale
+- id: jeong_dayoung
+  type: person
+  name: 정다영 (Jeong Dayoung)
+  url: http://www.maniadb.com/artist/138037
+  connects_to:
+  - donawhale
+  - adoy
+- id: oh_juhwan
+  type: person
+  name: 오주환 (Oh Juhwan)
+  url: http://www.maniadb.com/artist/389623
+  connects_to:
+  - adoy
+  - eastern_side_kick
+- id: kim_youngjin
+  type: person
+  name: 김영진 (Kim Youngjin)
+  url: http://www.maniadb.com/artist/101883
+  connects_to:
+  - glamour_sol
+  - h2o
+- id: kim_gun
+  type: person
+  name: 김건 (Kim Gun)
+  url: http://www.maniadb.com/artist/100894
+  connects_to:
+  - glamour_sol
+  - eve
+- id: kim_seheon
+  type: person
+  name: 김세헌 (Kim Seheon)
+  url: http://www.maniadb.com/artist/101668
+  connects_to:
+  - eve
+  - the_hysterics
+- id: lokur
+  type: person
+  name: 이창현 (Lokur)
+  url: http://www.maniadb.com/artist/151714
+  connects_to:
+  - the_hysterics
+  - the_the
+- id: dawn
+  type: person
+  name: 한희정 (Dawn)
+  url: http://www.maniadb.com/artist/113024
+  connects_to:
+  - the_the
+  - bluedawn
+- id: kwon_yongman
+  type: person
+  name: 권용만 (Kwon Yongman)
+  url: http://www.maniadb.com/artist/384583
+  connects_to:
+  - target: kuang_program
+    label: 2014-2017
+  - bamseom_pirates
+- id: goh_woo
+  type: person
+  name: Goh-Woo
+  url: https://linktr.ee/goh_woo
+  connects_to:
+  - organic_beer
+  - target: kuang_program
+    label: Collaborated with
+- id: kim_munhui
+  type: person
+  name: 김문희 (Kim Munhui)
+  url: http://www.maniadb.com/artist/101278
+  connects_to:
+  - moon_and_bouncers
+  - asoto_union
+- id: kim_banjang
+  type: person
+  name: 김반장 (Kim Banjang)
+  url: https://www.instagram.com/kbanjang/
+  connects_to:
+  - asoto_union
+  - sisters_barbershop
+- id: cha_jeongryeol
+  type: person
+  name: 차정렬 (Cha Jeongryeol)
+  url: http://www.maniadb.com/artist/111724
+  connects_to:
+  - h2o
+  - social_quality
+- id: lee_sooyong
+  type: person
+  name: 이수용 (Lee Sooyong)
+  url: http://www.maniadb.com/artist/108736
+  connects_to:
+  - social_quality
+  - n_ex_t
+- id: sohn_kyungho
+  type: person
+  name: 손경호 (Sohn Kyungho)
+  url: http://www.maniadb.com/artist/105796
+  connects_to:
+  - 99_band
+  - seoul_electric_band
+  - 3rd_line_butterfly
+  - bihaengsun
+- id: bae_sanghwan
+  type: person
+  name: 배상환 (Bae Sanghwan)
+  url: http://www.maniadb.com/artist/389625
+  connects_to:
+  - eastern_side_kick
+  - baada
+- id: kim_bada
+  type: person
+  name: 김바다 (Kim Bada)
+  url: http://www.maniadb.com/artist/101360
+  connects_to:
+  - art_of_parties
+  - baada
+  - bank
+- id: ahn_byeongbeom
+  type: person
+  name: 안병범 (Ahn Byeongbeom)
+  url: http://www.maniadb.com/artist/106627
+  connects_to:
+  - bank
+  - jazzpark_bigband
+  - mita_and_tango_bros
+- id: jo_jungchi
+  type: person
+  name: 조정치 (Jo Jungchi)
+  url: http://www.maniadb.com/artist/140767
+  connects_to:
+  - mita_and_tango_bros
+  - rotten_but_still_sweet
+- id: ko_yeongjun
+  type: person
+  name: 영준 (Youngjun)
+  url: http://www.maniadb.com/artist/107100
+  connects_to:
+  - rotten_but_still_sweet
+  - brown_eyed_soul
+- id: naul
+  type: person
+  name: 나얼 (Naul)
+  url: http://www.maniadb.com/artist/102974
+  connects_to:
+  - brown_eyed_soul
+  - brown_eyes
+- id: yoon_gun
+  type: person
+  name: 윤건 (Yoon Gun)
+  url: http://www.maniadb.com/artist/107865
+  connects_to:
+  - brown_eyes
+  - team
+  - honey_family
+- id: miryo
+  type: person
+  name: 미료 (Miryo)
+  url: http://www.maniadb.com/artist/135462
+  connects_to:
+  - honey_family
+  - brown_eyed_girls
+- id: jea
+  type: person
+  name: 제아 (JeA)
+  url: http://www.maniadb.com/artist/135460
+  connects_to:
+  - brown_eyed_girls
+  - yeonji_and_jea
+- id: kim_yeonji
+  type: person
+  name: 김연지 (Kim Yeonji)
+  url: http://www.maniadb.com/artist/135049
+  connects_to:
+  - yeonji_and_jea
+  - seeya
+  - daughter_of_a_rich_family
+- id: kang_hyeyeon
+  type: person
+  name: 강혜연 (Kang Hyeyeon)
+  url: http://www.maniadb.com/artist/421091
+  connects_to:
+  - miss_rainbow
+  - bestie
+  - youngten
+- id: hwang_woolim
+  type: person
+  name: 우림 (Hwang Woolim)
+  url: http://www.maniadb.com/artist/432288
+  connects_to:
+  - daughter_of_a_rich_family
+  - miss_rainbow
+- id: kim_taewook
+  type: person
+  name: 김태욱 (Kim Taewook)
+  url: http://www.maniadb.com/artist/152722
+  connects_to:
+  - youngten
+  - kangjeok_kaist
+- id: minsuh
+  type: person
+  name: 민서 (Minsuh)
+  url: http://www.maniadb.com/artist/461886
+  connects_to:
+  - kangjeok_kaist
+  - cotoba
+- id: kim_daein
+  type: person
+  name: 김대인 (Kim Daein)
+  url: https://www.maniadb.com/artist/382658
+  connects_to:
+  - apollo_18
+  - pakk
+  - target: donawhale
+    label: Remixed
+- id: choi_hyunseok
+  type: person
+  name: 최현석 (Choi Hyunseok)
+  url: https://www.maniadb.com/artist/502789
+  connects_to:
+  - apollo_18
+  - chs
+- id: park_jeonghyeon
+  type: person
+  name: 박정현 (Park Jeonghyeon)
+  url: ''
+  connects_to:
+  - suck_stuff
+  - fail_fast

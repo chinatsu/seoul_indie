@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Abridged map of Seoul Indie</title>
+    <script src="https://unpkg.com/cytoscape@3.34.0/dist/cytoscape.min.js"></script>
+    <script src="https://unpkg.com/layout-base/layout-base.js"></script>
+    <script src="https://unpkg.com/cose-base/cose-base.js"></script>
+    <script src="https://unpkg.com/cytoscape-cose-bilkent@4.1.0/cytoscape-cose-bilkent.js"></script>
+
+</head>
+<style>
+    body {
+        font: 14px helvetica neue, helvetica, arial, sans-serif;
+        background: #232634
+    }
+
+    #graph {
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        float: left;
+        background: #232634;
+        position: absolute;
+        z-index: -5;
+    }
+
+    #info {
+        background: rgba(0, 0, 0, 0.1);
+        width: fit-content;
+    }
+
+    h1, p {
+        color: #fff;
+        margin: 0.2rem;
+    }
+</style>
+
+<body>
+    <section id="info">
+        <h1>Abridged map of Seoul(?) indie(?)</h1>
+        <p>Last updated: 2025-11-12</p>
+        <p>The vast majority of data has been sourced from <a href="http://www.maniadb.com">maniadb</a>. Not every person involved is displayed here, mostly just the ones with "interesting" connections.</p>
+    </section>
+    <section id="graph">
+    </section>
+    <script>
+        var cy = cytoscape({
+            container: document.getElementById('graph'),
+            elements: {{ elements_json | safe }},
+            style: [
+                {
+                    selector: 'node',
+                    style: {
+                        'color': '#c6d0f5',
+                    }
+                },
+
+                {
+                    selector: 'edge',
+                    style: {
+                        'line-color': '#626880',
+                        'color': '#a5adce',
+                    }
+                },
+                {
+                    selector: 'node[type = "person"]',
+                    style: {
+                        'label': 'data(name)',
+                        'shape': 'triangle',
+                        'background-color': '#6e738d',
+                    }
+                },
+                {
+                    selector: 'node[type = "group"]',
+                    style: {
+                        'label': 'data(name)',
+                        'shape': 'star',
+                        'background-color': '#e5c890'
+                    }
+                },
+                {
+                    selector: 'edge[label]',
+                    style: {
+                        'label': 'data(label)' // maps to data.label
+
+                    }
+                },
+
+                {
+                    selector: 'edge[label = "Featured"]',
+                    style: {
+                        'width': 3,
+                        'line-style': 'dashed',
+                        'line-color': '#e5c890',
+                        'target-arrow-color': '#e5c890',
+                        'target-arrow-shape': 'triangle',
+                        'curve-style': 'bezier',
+                    }
+                },
+                {
+                    selector: 'edge[label = "Remixed"]',
+                    style: {
+                        'line-style': 'dashed',
+                        'line-color': '#ca9ee6',
+                        'target-arrow-color': '#ca9ee6',
+                        'target-arrow-shape': 'triangle',
+                        'curve-style': 'bezier',
+                    }
+                },
+
+                {
+                    selector: 'edge[label = "Produced"]',
+                    style: {
+                        'line-style': 'dashed',
+                        'line-color': '#ef9f76',
+                        'target-arrow-color': '#ef9f76',
+                        'target-arrow-shape': 'triangle',
+                        'curve-style': 'bezier',
+                    }
+                },
+
+                {
+                    selector: 'edge[label = "Sound director for"]',
+                    style: {
+                        'line-style': 'dashed',
+                        'line-color': '#ef9f76',
+                        'target-arrow-color': '#ef9f76',
+                        'target-arrow-shape': 'triangle',
+                        'curve-style': 'bezier',
+                    }
+                },
+
+                {
+                    selector: 'edge[label = "Sessioned"]',
+                    style: {
+                        'line-style': 'dashed',
+                        'line-color': '#85c1dc',
+                        'target-arrow-color': '#85c1dc',
+                        'target-arrow-shape': 'triangle',
+                        'curve-style': 'bezier',
+                    }
+                },
+                {
+                    selector: 'edge[label = "Collaborated with"]',
+                    style: {
+                        'line-style': 'dashed',
+                        'line-color': '#8caaee',
+                        'target-arrow-color': '#8caaee',
+                        'target-arrow-shape': 'triangle',
+                        'curve-style': 'bezier',
+                    }
+                },
+                {
+                    selector: 'edge[label = "Gave lessons to"]',
+                    style: {
+                        'line-style': 'dotted',
+                        'line-color': '#ea999c',
+                        'target-arrow-color': '#ea999c',
+                        'target-arrow-shape': 'triangle',
+                        'curve-style': 'bezier',
+                    }
+                },
+                {
+                    selector: 'edge[label = "Sampled"]',
+                    style: {
+                        'line-style': 'dotted',
+                        'target-arrow-shape': 'triangle',
+                        'curve-style': 'bezier',
+                    }
+                },
+                {
+                    selector: 'node.highlight',
+                    style: {
+                        'border-color': '#FFF',
+                        'border-width': '2px'
+                    }
+                },
+                {
+                    selector: 'node.semitransp',
+                    style: { 'opacity': '0.2' }
+                },
+                {
+                    selector: 'edge.highlight',
+                    style: {
+                        'line-color': '#ffeeee',
+                        'mid-target-arrow-color': '#FFF'
+                    }
+                },
+                {
+                    selector: 'edge.semitransp',
+                    style: { 'opacity': '0.05' }
+                }
+            ],
+            layout: {
+                name: 'cose-bilkent',
+                nodeDimensionsIncludeLabels: true,
+                fit: true,
+                padding: 10,
+                idealEdgeLength: 50,
+                animate: false,
+                quality: 'normal',
+            },
+        });
+
+        cy.on('tap', 'node', function (evt) {
+            if (evt.target.data('url'))
+                window.open(evt.target.data('url'), '_blank');
+        });
+
+        function getNeighborhood(node, degree) {
+            var result = node;
+            for (var i = 0; i < degree; i++) {
+                result = result.union(result.neighborhood());
+            }
+            return result;
+        }
+
+        cy.on('mouseover', 'node', function (e) {
+            var highlighted = getNeighborhood(e.target, 3);
+
+            cy.elements()
+                .difference(highlighted)
+                .addClass('semitransp');
+
+            highlighted.addClass('highlight');
+        });
+
+        cy.on('mouseout', 'node', function (e) {
+            cy.elements()
+                .removeClass('semitransp')
+                .removeClass('highlight');
+        });
+
+
+    </script>
+</body>
+
+</html>
