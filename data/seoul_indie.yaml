@@ -486,6 +486,14 @@ nodes:
   type: group
   name: Banran (반란)
   url: https://banran.bandcamp.com/album/exterminate
+- id: shadow_community
+  type: group
+  name: Shadow Community (그림자 공동체)
+  url: https://www.youtube.com/watch?v=AE6Xyv-yEiA
+- id: near_east_quartet
+  type: group
+  name: The Near East Quartet (더 니어 이스트 쿼텟)
+  url: https://www.youtube.com/watch?v=wwnWwIo18QE
 # ------
 # People
 # ------
@@ -931,6 +939,8 @@ nodes:
   type: person
   name: 공중도둑 (Mid-Air Thief)
   url: http://www.maniadb.com/artist/422165
+  connects_to:
+  - shadow_community
 - id: han_sangchol
   type: person
   name: 한상철 (Han Sangchol)
@@ -1311,3 +1321,17 @@ nodes:
   - banran
   - things_we_say
   - no_excuse
+- id: herhums
+  type: person
+  name: 허험스 (Herhums)
+  url: 'https://www.instagram.com/herhums/'
+  connects_to:
+  - shadow_community
+- id: jun_youngsong
+  type: person
+  name: 송준영 (Jun Youngsong)
+  url: 'http://www.maniadb.com/artist/410648'
+  connects_to:
+  - near_east_quartet
+  - target: shadow_community
+    label: Sessioned for
