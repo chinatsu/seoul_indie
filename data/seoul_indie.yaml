@@ -1303,3 +1303,11 @@ nodes:
   - join_the_circle
   - banran
   - things_we_say
+- id: jo_hoonee
+  type: person
+  name: 조훈희 (Jo Hoonee)
+  url: 'https://www.instagram.com/hooneejo/'
+  connects_to:
+  - banran
+  - things_we_say
+  - no_excuse
