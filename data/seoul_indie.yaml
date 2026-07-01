@@ -474,6 +474,18 @@ nodes:
   type: group
   name: FØG
   url: https://phoque0twisted.bandcamp.com
+- id: things_we_say
+  type: group
+  name: Things We Say
+  url: https://www.instagram.com/thingswesayhc/
+- id: join_the_circle
+  type: group
+  name: Join the Circle
+  url: http://www.maniadb.com/artist/135596
+- id: banran
+  type: group
+  name: Banran (반란)
+  url: https://banran.bandcamp.com/album/exterminate
 # ------
 # People
 # ------
@@ -626,6 +638,7 @@ nodes:
   - 13_steps
   - suck_stuff
   - skasucks
+  - things_we_say
 - id: eeru
   type: person
   name: 이일우 (Eeru)
@@ -1275,3 +1288,18 @@ nodes:
   connects_to:
   - target: asian_glow
     label: Collaborated with
+- id: victor_ha
+  type: person
+  name: 하형권 (Victor Ha)
+  url: 'https://www.instagram.com/victorha'
+  connects_to:
+  - things_we_say
+  - join_the_circle
+- id: kang_yongjun
+  type: person
+  name: 강용준 (Kang Yongjun)
+  url: 'http://www.maniadb.com/artist/135603'
+  connects_to:
+  - join_the_circle
+  - banran
+  - things_we_say
