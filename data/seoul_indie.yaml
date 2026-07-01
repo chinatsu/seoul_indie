@@ -547,7 +547,8 @@ nodes:
   url: http://jowall.kr
   connects_to:
   - sokot_band
-  - byul_org
+  - target: byul_org
+    label: 2000-2021
 - id: ninaian
   type: person
   name: 박현민 (Ninaian)

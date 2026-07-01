@@ -2,11 +2,49 @@
 
 https://girlypop.no/seoul_indie/
 
+## data structure
+
+`data/seoul_indie.yaml` contains nodes. edges are calculated from `connects_to`-fields on nodes.
+
+```yaml
+nodes:
+- id: string # unique
+  type: group|person # <-- determines the icon displayed (star or triangle)
+  name: string
+  url: string # determines where users are sent upon clicking a node
+  connects_to:
+  - string # another nodes[].id
+  - target: string # another nodes[].id
+    label: string # Produced|Remixed|Featured|Collaborated with|Sound director for|Gave lessons to, but also anything else like 2014-2017, the years in which a person was in a band
+```
+
 ## contributing
 
 to change relationships, add people or groups, edit `data/seoul_indie.yaml` and submit a pull request
 
-please only add `connects_to` fields to person node types, thanks!
+### stuff that should be noted if you want to add nodes or edges
+
+please think about the directionality: `x` produced `y`, thus the connection should lie with `x`, to `y`. no connections are necessarily going out of `y`.
+`x` could also be a member of the group `z`, which is also a connection _from_ `x` to `z`.
+
+```yaml
+- id: x
+  type: person
+  name: x
+  url: ''
+  connects_to:
+  - target: y
+    label: Produced
+  - z
+- id: y
+  type: person
+  name: y
+  url: ''
+- id: z
+  type: group
+  name: z
+  url: ''
+```
 
 ### stuff i want help with
 
