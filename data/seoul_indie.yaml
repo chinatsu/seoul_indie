@@ -470,6 +470,10 @@ nodes:
   type: group
   name: WALL WALL
   url: https://www.youtube.com/watch?v=hourfuFcI4I
+- id: fog
+  type: group
+  name: FØG
+  url: https://phoque0twisted.bandcamp.com
 # ------
 # People
 # ------
@@ -524,6 +528,7 @@ nodes:
     label: Remixed
   - target: pishu
     label: Featured
+  - fog
 - id: siwa
   type: person
   name: 시와 (Siwa)
@@ -1257,3 +1262,16 @@ nodes:
   type: person
   name: 해파 (Haepa)
   url: 'https://www.instagram.com/steadyhaepa'
+- id: asian_glow
+  type: person
+  name: Asian Glow
+  url: 'https://dbeatdropdeadpowerhead.bandcamp.com'
+  connects_to:
+  - fog
+- id: parannoul
+  type: person
+  name: Parannoul
+  url: 'https://parannoul.bandcamp.com'
+  connects_to:
+  - target: asian_glow
+    label: Collaborated with
