@@ -54,8 +54,8 @@ please think about the directionality: `x` produced `y`, thus the connection sho
 ## ideas/roadmap
 
 - [x] more concise way to define groups and people and the connections between them
-- [ ] support urls for links
-- [ ] click node to show neighborhood (will break urls), click anywhere else to clear neighborhood view
+- [ ] support urls for edges
+- [ ] click node to show neighborhood (will break urls the way they work now, but enables neighborhood view on mobile), click anywhere else to clear neighborhood view
 - [ ] support more urls for nodes
 - [ ] click node to open a sidebar (desktop)/drawer (mobile) showing any urls associated to the node
-- [ ] click edge to open a sidebar (desktop)/drawer (mobile) showing any urls associated to the link
+- [ ] click edge to open a sidebar (desktop)/drawer (mobile) showing any urls associated to the edge
