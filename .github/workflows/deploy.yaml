@@ -26,4 +26,4 @@ jobs:
         echo "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/id_ed25519
         chmod 600 ~/.ssh/id_ed25519
         ssh-keyscan -H girlypop.no >> ~/.ssh/known_hosts
-        rsync -avz -e "ssh -i ~/.ssh/id_ed25519" index.html cn@girlypop.no:/home/cn/sad_energy/seoul_indie/
+        rsync -avz -e "ssh -i ~/.ssh/id_ed25519" index.html cn@girlypop.no
