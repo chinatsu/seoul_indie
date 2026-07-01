@@ -5,6 +5,7 @@ except ImportError:
     from yaml import Loader
 from json import dumps
 from jinja2 import Environment, FileSystemLoader
+from datetime import datetime
 
 
 with open("data/seoul_indie.yaml", "r") as f:
@@ -42,7 +43,7 @@ def build():
 
     env = Environment(loader=FileSystemLoader("."))
     template = env.get_template("template/seoul_indie.html")
-    output = template.render(elements_json=elements_json)
+    output = template.render(elements_json=elements_json, last_updated=datetime.now().strftime("%Y-%m-%d"))
 
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(output)
