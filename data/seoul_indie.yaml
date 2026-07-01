@@ -462,6 +462,10 @@ nodes:
   type: group
   name: Fail Fast
   url: https://www.wdikorea.com/fail-fast
+- id: lilly_eat_machine
+  type: group
+  name: Lilly Eat Machine
+  url: https://linktr.ee/lillyeatmachine
 # ------
 # People
 # ------
@@ -514,6 +518,8 @@ nodes:
   connects_to:
   - target: maddyxp
     label: Remixed
+  - target: pishu
+    label: Featured
 - id: siwa
   type: person
   name: 시와 (Siwa)
@@ -1214,3 +1220,16 @@ nodes:
   connects_to:
   - suck_stuff
   - fail_fast
+- id: pishu
+  type: person
+  name: 피슈 (Pishu)
+  url: 'https://penguinwithoutice.com/'
+  connects_to:
+  - target: sean_yoo
+    label: Produced
+- id: sean_yoo
+  type: person
+  name: Sean Yoo
+  url: ''
+  connects_to:
+  - lilly_eat_machine
