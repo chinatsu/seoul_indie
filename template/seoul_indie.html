@@ -33,6 +33,13 @@
         width: fit-content;
     }
 
+    #searchfield {
+        position: absolute;
+        bottom: 0.5rem;
+        left: 50%;
+        z-index: 10;
+    }
+
     h1, p {
         color: {{ colors.foreground }};
         margin: 0.2rem;
@@ -58,6 +65,9 @@
       </section>
     </details>
     <section id="graph">
+    </section>
+    <section id="searchfield">
+        <input type="text" id="search" placeholder="Search for a person or group..." oninput="onInputChange()">
     </section>
     <script>
         var cy = cytoscape({
@@ -239,6 +249,8 @@
                 target = undefined;
             } else {
                 if (newTarget.isNode()) {
+                    var input = document.getElementById("search");
+                    input.value = newTarget.data('name');
                     if (target === newTarget && newTarget.data('url')) {
                         window.open(newTarget.data('url'), '_blank');
                     }
@@ -251,6 +263,28 @@
                 }
             }
         });
+
+        function onInputChange() {
+            var input = document.getElementById("search");
+            var searchTerm = input.value.toLowerCase();
+            if (searchTerm == "") {
+                cy.elements().removeClass('highlight').removeClass('semitransp');
+                return;
+            }
+            cy.elements().forEach(function(element) {
+                if (element.isNode()) {
+                    var name = element.data('name').toLowerCase();
+                    if (name.includes(searchTerm)) {
+                    element.addClass('highlight');
+            
+                    } else {
+                        element.addClass('semitransp');
+                    }
+                } else {
+                    element.addClass('semitransp');
+                }
+            });
+        }
     </script>
 </body>
 
