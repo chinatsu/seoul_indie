@@ -1373,7 +1373,7 @@ nodes:
 - id: gunwoo
   type: person
   name: 건우 (Gunwoo)
-  url: 'https://www.instagram.com/gunwoo_/'
+  url: 'http://www.maniadb.com/artist/464099'
   connects_to:
   - moonsomoon
 - id: oh_hyeseok
