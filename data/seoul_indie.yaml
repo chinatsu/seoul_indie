@@ -1428,7 +1428,7 @@ nodes:
 - id: fin_fior
   type: person
   name: Fin Fior
-  url: 'https://finfior.bandcamp.com/
+  url: 'https://finfior.bandcamp.com/'
   connects_to:
   - digital_dawn
 - id: della_zyr
