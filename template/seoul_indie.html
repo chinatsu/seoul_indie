@@ -1,17 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Abridged map of Seoul Indie</title>
     <script src="https://unpkg.com/cytoscape@3.34.0/dist/cytoscape.min.js"></script>
     <script src="https://unpkg.com/layout-base/layout-base.js"></script>
     <script src="https://unpkg.com/cose-base/cose-base.js"></script>
     <script src="https://unpkg.com/cytoscape-cose-bilkent@4.1.0/cytoscape-cose-bilkent.js"></script>
-
-</head>
-<style>
+  </head>
+  <style>
     body {
         font: 14px helvetica neue, helvetica, arial, sans-serif;
         background: {{ colors.background }};
@@ -53,240 +51,278 @@
     details[open] > summary {
       list-style-type: "❗ ";
     }
-</style>
+  </style>
 
-<body>
+  <body>
     <details>
       <summary>About this map</summary>
       <section id="info">
-          <h1>Abridged map of Seoul(?) indie(?)</h1>
-          <p>Last updated: {{ last_updated }}</p>
-          <p>The vast majority of data has been sourced from <a href="http://www.maniadb.com">maniadb</a>. Not every person involved is displayed here, mostly just the ones with "interesting" connections.</p>
-          <p>Want to contribute? <a href="https://github.com/chinatsu/seoul_indie">Submit a pull request on GitHub</a>!</p>
+        <h1>Abridged map of Seoul(?) indie(?)</h1>
+        <p>Last updated: {{ last_updated }}</p>
+        <p>
+          The vast majority of data has been sourced from
+          <a href="http://www.maniadb.com">maniadb</a>. Not every person
+          involved is displayed here, mostly just the ones with "interesting"
+          connections.
+        </p>
+        <p>
+          Want to contribute?
+          <a href="https://github.com/chinatsu/seoul_indie"
+            >Submit a pull request on GitHub</a
+          >!
+        </p>
       </section>
     </details>
-    <section id="graph">
-    </section>
+    <section id="graph"></section>
     <section id="searchfield">
-        <input type="text" id="search" placeholder="Search for a person or group..." oninput="onInputChange()">
+      <input
+        type="text"
+        id="search"
+        placeholder="Search for a person or group..."
+        oninput="onInputChange()"
+      />
     </section>
     <script>
-        var cy = cytoscape({
-            container: document.getElementById('graph'),
-            elements: {{ elements_json | safe }},
-            style: [
-                {
-                    selector: 'node',
-                    style: {
-                        'color': '{{ colors.foreground }}',
-                    }
-                },
+      var cy = cytoscape({
+          container: document.getElementById('graph'),
+          elements: {{ elements_json | safe }},
+          style: [
+              {
+                  selector: 'node',
+                  style: {
+                      'color': '{{ colors.foreground }}',
+                  }
+              },
 
-                {
-                    selector: 'edge',
-                    style: {
-                        'line-color': '{{ colors.edgeDefault }}',
-                        'color': '{{ colors.edgeDefault }}',
-                    }
-                },
-                {
-                    selector: 'node[type = "person"]',
-                    style: {
-                        'label': 'data(name)',
-                        'shape': 'triangle',
-                        'background-color': '{{ colors.nodePerson }}',
-                        'line-color': '{{ colors.nodePersonStroke }}',
+              {
+                  selector: 'edge',
+                  style: {
+                      'line-color': '{{ colors.edgeDefault }}',
+                      'color': '{{ colors.edgeDefault }}',
+                  }
+              },
+              {
+                  selector: 'node[type = "person"]',
+                  style: {
+                      'label': 'data(name)',
+                      'shape': 'triangle',
+                      'background-color': '{{ colors.nodePerson }}',
+                      'line-color': '{{ colors.nodePersonStroke }}',
 
-                    }
-                },
-                {
-                    selector: 'node[type = "group"]',
-                    style: {
-                        'label': 'data(name)',
-                        'shape': 'star',
-                        'background-color': '{{ colors.nodeGroup }}',
-                        'line-color': '{{ colors.nodeGroupStroke }}'
-                    }
-                },
-                {
-                    selector: 'edge[label]',
-                    style: {
-                        'label': 'data(label)' // maps to data.label
+                  }
+              },
+              {
+                  selector: 'node[type = "group"]',
+                  style: {
+                      'label': 'data(name)',
+                      'shape': 'star',
+                      'background-color': '{{ colors.nodeGroup }}',
+                      'line-color': '{{ colors.nodeGroupStroke }}'
+                  }
+              },
+              {
+                  selector: 'edge[label]',
+                  style: {
+                      'label': 'data(label)' // maps to data.label
 
-                    }
-                },
+                  }
+              },
 
-                {
-                    selector: 'edge[label = "Featured"]',
-                    style: {
-                        'width': 3,
-                        'line-style': 'dashed',
-                        'line-color': '{{ colors.edgeFeatured }}',
-                        'target-arrow-color': '{{ colors.edgeFeatured }}',
-                        'target-arrow-shape': 'triangle',
-                        'curve-style': 'bezier',
-                    }
-                },
-                {
-                    selector: 'edge[label = "Remixed"]',
-                    style: {
-                        'line-style': 'dashed',
-                        'line-color': '{{ colors.edgeRemixed }}',
-                        'target-arrow-color': '{{ colors.edgeRemixed }}',
-                        'target-arrow-shape': 'triangle',
-                        'curve-style': 'bezier',
-                    }
-                },
+              {
+                  selector: 'edge[label = "Featured"]',
+                  style: {
+                      'width': 3,
+                      'line-style': 'dashed',
+                      'line-color': '{{ colors.edgeFeatured }}',
+                      'target-arrow-color': '{{ colors.edgeFeatured }}',
+                      'target-arrow-shape': 'triangle',
+                      'curve-style': 'bezier',
+                  }
+              },
+              {
+                  selector: 'edge[label = "Remixed"]',
+                  style: {
+                      'line-style': 'dashed',
+                      'line-color': '{{ colors.edgeRemixed }}',
+                      'target-arrow-color': '{{ colors.edgeRemixed }}',
+                      'target-arrow-shape': 'triangle',
+                      'curve-style': 'bezier',
+                  }
+              },
 
-                {
-                    selector: 'edge[label = "Produced"]',
-                    style: {
-                        'line-style': 'dashed',
-                        'line-color': '{{ colors.edgeProduced }}',
-                        'target-arrow-color': '{{ colors.edgeProduced }}',
-                        'target-arrow-shape': 'triangle',
-                        'curve-style': 'bezier',
-                    }
-                },
+              {
+                  selector: 'edge[label = "Produced"]',
+                  style: {
+                      'line-style': 'dashed',
+                      'line-color': '{{ colors.edgeProduced }}',
+                      'target-arrow-color': '{{ colors.edgeProduced }}',
+                      'target-arrow-shape': 'triangle',
+                      'curve-style': 'bezier',
+                  }
+              },
 
-                {
-                    selector: 'edge[label = "Sound director for"]',
-                    style: {
-                        'line-style': 'dashed',
-                        'line-color': '{{ colors.edgeSoundDirectorFor }}',
-                        'target-arrow-color': '{{ colors.edgeSoundDirectorFor }}',
-                        'target-arrow-shape': 'triangle',
-                        'curve-style': 'bezier',
-                    }
-                },
+              {
+                  selector: 'edge[label = "Sound director for"]',
+                  style: {
+                      'line-style': 'dashed',
+                      'line-color': '{{ colors.edgeSoundDirectorFor }}',
+                      'target-arrow-color': '{{ colors.edgeSoundDirectorFor }}',
+                      'target-arrow-shape': 'triangle',
+                      'curve-style': 'bezier',
+                  }
+              },
 
-                {
-                    selector: 'edge[label = "Sessioned for"]',
-                    style: {
-                        'line-style': 'dashed',
-                        'line-color': '{{ colors.edgeSessionedFor }}',
-                        'target-arrow-color': '{{ colors.edgeSessionedFor }}',
-                        'target-arrow-shape': 'triangle',
-                        'curve-style': 'bezier',
-                    }
-                },
-                {
-                    selector: 'edge[label = "Collaborated with"]',
-                    style: {
-                        'line-style': 'dashed',
-                        'line-color': '{{ colors.edgeCollaboratedWith }}',
-                        'target-arrow-shape': 'none',
-                        'curve-style': 'bezier',
-                    }
-                },
-                {
-                    selector: 'edge[label = "Gave lessons to"]',
-                    style: {
-                        'line-style': 'dotted',
-                        'line-color': '{{ colors.edgeGaveLessonsTo }}',
-                        'target-arrow-color': '{{ colors.edgeGaveLessonsTo }}',
-                        'target-arrow-shape': 'triangle',
-                        'curve-style': 'bezier',
-                    }
-                },
-                {
-                    selector: 'edge[label = "Sampled"]',
-                    style: {
-                        'line-style': 'dotted',
-                        'target-arrow-shape': 'triangle',
-                        'curve-style': 'bezier',
-                    }
-                },
-                {
-                    selector: 'node[type = "person"].highlight',
-                    style: {
-                        'border-color': '{{ colors.nodePersonStroke }}',
-                        'border-width': '2px',
-                    }
-                },
-                {
-                    selector: 'node[type = "group"].highlight',
-                    style: {
-                        'border-color': '{{ colors.nodeGroupStroke }}',
-                        'border-width': '2px',
-                    }
-                },
-                {
-                    selector: 'node.semitransp',
-                    style: { 'opacity': '0.2' }
-                },
-                {
-                    selector: 'edge.semitransp',
-                    style: { 'opacity': '0.05' }
-                }
-            ],
-            layout: {
-                name: 'cose-bilkent',
-                nodeDimensionsIncludeLabels: true,
-                fit: true,
-                padding: 10,
-                idealEdgeLength: 50,
-                animate: false,
-                quality: 'normal',
-            },
-        });
+              {
+                  selector: 'edge[label = "Sessioned for"]',
+                  style: {
+                      'line-style': 'dashed',
+                      'line-color': '{{ colors.edgeSessionedFor }}',
+                      'target-arrow-color': '{{ colors.edgeSessionedFor }}',
+                      'target-arrow-shape': 'triangle',
+                      'curve-style': 'bezier',
+                  }
+              },
+              {
+                  selector: 'edge[label = "Collaborated with"]',
+                  style: {
+                      'line-style': 'dashed',
+                      'line-color': '{{ colors.edgeCollaboratedWith }}',
+                      'target-arrow-shape': 'none',
+                      'curve-style': 'bezier',
+                  }
+              },
+              {
+                  selector: 'edge[label = "Gave lessons to"]',
+                  style: {
+                      'line-style': 'dotted',
+                      'line-color': '{{ colors.edgeGaveLessonsTo }}',
+                      'target-arrow-color': '{{ colors.edgeGaveLessonsTo }}',
+                      'target-arrow-shape': 'triangle',
+                      'curve-style': 'bezier',
+                  }
+              },
+              {
+                  selector: 'edge[label = "Sampled"]',
+                  style: {
+                      'line-style': 'dotted',
+                      'target-arrow-shape': 'triangle',
+                      'curve-style': 'bezier',
+                  }
+              },
+              {
+                  selector: 'node[type = "person"].highlight',
+                  style: {
+                      'border-color': '{{ colors.nodePersonStroke }}',
+                      'border-width': '2px',
+                  }
+              },
+              {
+                  selector: 'node[type = "group"].highlight',
+                  style: {
+                      'border-color': '{{ colors.nodeGroupStroke }}',
+                      'border-width': '2px',
+                  }
+              },
+              {
+                  selector: 'node.semitransp',
+                  style: { 'opacity': '0.2' }
+              },
+              {
+                  selector: 'edge.semitransp',
+                  style: { 'opacity': '0.05' }
+              }
+          ],
+          layout: {
+              name: 'cose-bilkent',
+              nodeDimensionsIncludeLabels: true,
+              fit: true,
+              padding: 10,
+              idealEdgeLength: 50,
+              animate: false,
+              quality: 'normal',
+          },
+      });
 
-        function getNeighborhood(node, degree) {
-            var result = node;
-            for (var i = 0; i < degree; i++) {
-                result = result.union(result.neighborhood());
+      function getNeighborhood(node, degree) {
+          var result = node;
+          for (var i = 0; i < degree; i++) {
+              result = result.union(result.neighborhood());
+          }
+          return result;
+      }
+
+      var target = undefined;
+      function highlightNeighborhood(newTarget) {
+        cy.elements()
+            .removeClass('semitransp')
+            .removeClass('highlight');
+        if( newTarget === cy ){
+            target = undefined;
+        } else {
+            if (newTarget.isNode()) {
+                var highlighted = getNeighborhood(newTarget, 3);
+                cy.elements()
+                    .difference(highlighted)
+                    .addClass('semitransp');
+                highlighted.addClass('highlight');
             }
-            return result;
         }
+      }
 
-        var target = undefined;
+      
 
-        cy.on('tap', function(event){
-            var newTarget = event.target;
-            cy.elements()
-                .removeClass('semitransp')
-                .removeClass('highlight');
-            if( newTarget === cy ){
-                target = undefined;
-            } else {
-                if (newTarget.isNode()) {
-                    var input = document.getElementById("search");
-                    input.value = newTarget.data('name');
-                    if (target === newTarget && newTarget.data('url')) {
-                        window.open(newTarget.data('url'), '_blank');
-                    }
-                    target = newTarget;
-                    var highlighted = getNeighborhood(target, 3);
-                    cy.elements()
-                        .difference(highlighted)
-                        .addClass('semitransp');
-                    highlighted.addClass('highlight');
-                }
-            }
-        });
-
-        function onInputChange() {
-            var input = document.getElementById("search");
-            var searchTerm = input.value.toLowerCase();
-            if (searchTerm == "") {
-                cy.elements().removeClass('highlight').removeClass('semitransp');
-                return;
-            }
-            cy.elements().forEach(function(element) {
-                if (element.isNode()) {
-                    var name = element.data('name').toLowerCase();
-                    if (name.includes(searchTerm)) {
-                    element.addClass('highlight');
-            
-                    } else {
-                        element.addClass('semitransp');
-                    }
-                } else {
-                    element.addClass('semitransp');
-                }
-            });
+      cy.on('tap', function(event){
+        if (event.target !== cy) {
+          highlightNeighborhood(event.target);
+          if (target === event.target && event.target.data('url')) {
+            window.open(event.target.data('url'), '_blank');
+          }
+          target = event.target;
         }
+      });
+
+
+      var searchTimeout;
+      function onInputChange() {
+          clearTimeout(searchTimeout);
+          searchTimeout = setTimeout(search, 300);
+      }
+
+      function search() {
+          var input = document.getElementById("search");
+          var searchTerm = input.value.toLowerCase();
+          if (searchTerm == "") {
+              cy.elements().removeClass('highlight').removeClass('semitransp');
+              return;
+          }
+          var matchingNodes = []
+          cy.elements().forEach(function(element) {
+              if (element.isNode()) {
+                  var name = element.data('name').toLowerCase();
+                  if (name.includes(searchTerm)) {  
+                      matchingNodes.push(element);
+                  }
+              }
+          });
+          if (matchingNodes.length === 1) {
+              highlightNeighborhood(matchingNodes[0]);
+              var firstMatch = matchingNodes[0];
+              cy.animate({
+                  fit: {
+                      eles: getNeighborhood(firstMatch, 3),
+                      padding: 50
+                  },
+                  duration: 1000
+              });
+          } else if (matchingNodes.length > 1) {
+              cy.elements().addClass('semitransp');
+              matchingNodes.forEach(function(node) {
+                  node.removeClass('semitransp').addClass('highlight');
+              });
+          } else {
+              cy.elements().removeClass('highlight').removeClass('semitransp');
+          }
+      }
     </script>
-</body>
-
+  </body>
 </html>
