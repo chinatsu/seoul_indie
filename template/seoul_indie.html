@@ -37,15 +37,26 @@
         color: {{ colors.foreground }};
         margin: 0.2rem;
     }
+    details > summary {
+      cursor: pointer;
+      list-style-type: "❓ ";
+    }
+
+    details[open] > summary {
+      list-style-type: "❗ ";
+    }
 </style>
 
 <body>
-    <section id="info">
-        <h1>Abridged map of Seoul(?) indie(?)</h1>
-        <p>Last updated: {{ last_updated }}</p>
-        <p>The vast majority of data has been sourced from <a href="http://www.maniadb.com">maniadb</a>. Not every person involved is displayed here, mostly just the ones with "interesting" connections.</p>
-        <p>Want to contribute? <a href="https://github.com/chinatsu/seoul_indie">Submit a pull request on GitHub</a>!</p>
-    </section>
+    <details>
+      <summary>About this map</summary>
+      <section id="info">
+          <h1>Abridged map of Seoul(?) indie(?)</h1>
+          <p>Last updated: {{ last_updated }}</p>
+          <p>The vast majority of data has been sourced from <a href="http://www.maniadb.com">maniadb</a>. Not every person involved is displayed here, mostly just the ones with "interesting" connections.</p>
+          <p>Want to contribute? <a href="https://github.com/chinatsu/seoul_indie">Submit a pull request on GitHub</a>!</p>
+      </section>
+    </details>
     <section id="graph">
     </section>
     <script>
