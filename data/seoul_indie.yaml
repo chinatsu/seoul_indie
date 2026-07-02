@@ -984,12 +984,6 @@ nodes:
   connects_to:
   - sunkyeol
   - julia_hart
-  - target: lang_lee
-    label: Produced
-  - target: linus_blanket
-    label: Produced
-  - target: i_love_jh
-    label: Produced
 - id: cho_inchul
   type: person
   name: 조인철 (Cho Inchul)
