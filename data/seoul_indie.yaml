@@ -510,6 +510,10 @@ nodes:
   type: group
   name: 김현철 / 이현우 / 윤종신 / 윤상
   url: http://www.maniadb.com/artist/102758
+- id: sinawe
+  type: group
+  name: 시나위 (Sinawe)
+  url: http://www.maniadb.com/artist/106150
 # ------
 # People
 # ------
@@ -1063,6 +1067,7 @@ nodes:
   - glamour_sol
   - h2o
   - moon_child
+  - sinawe
 - id: kim_gun
   type: person
   name: 김건 (Kim Gun)
@@ -1159,6 +1164,7 @@ nodes:
   - art_of_parties
   - baada
   - bank
+  - sinawe
 - id: ahn_byeongbeom
   type: person
   name: 안병범 (Ahn Byeongbeom)
