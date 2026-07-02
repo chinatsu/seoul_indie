@@ -1409,7 +1409,7 @@ nodes:
   - moon_child
 - id: brokenteeth
   type: person
-  name: Brokenteeth
+  name: BrokenTeeth
   url: 'https://linktr.ee/brokenteeth99'
   connects_to:
   - target: parannoul
