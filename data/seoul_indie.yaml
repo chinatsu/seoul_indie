@@ -502,6 +502,14 @@ nodes:
   type: group
   name: moonsomoon (문소문)
   url: https://linktr.ee/moonsomoon
+- id: moon_child
+  type: group
+  name: Moon Child (문차일드)
+  url: https://linktr.ee/moonchildband
+- id: kim_hyun_chul_lee_hyun_woo_yoon_jong_shin_yoon_sang
+  type: group
+  name: 김현철 / 이현우 / 윤종신 / 윤상
+  url: http://www.maniadb.com/artist/102758
 # ------
 # People
 # ------
@@ -878,6 +886,7 @@ nodes:
   - nodance
   - mo_tet
   - nohys
+  - kim_hyun_chul_lee_hyun_woo_yoon_jong_shin_yoon_sang
   - target: brown_eyed_girls
     label: Sound director for
 - id: juuno
@@ -1053,6 +1062,7 @@ nodes:
   connects_to:
   - glamour_sol
   - h2o
+  - moon_child
 - id: kim_gun
   type: person
   name: 김건 (Kim Gun)
@@ -1380,3 +1390,10 @@ nodes:
     label: Recording engineer for
   - target: cotoba
     label: Recording engineer for
+- id: jessie_lee
+  type: person
+  name: 이현우 (Jessie Lee)
+  url: 'http://www.maniadb.com/artist/109638'
+  connects_to:
+  - kim_hyun_chul_lee_hyun_woo_yoon_jong_shin_yoon_sang
+  - moon_child
