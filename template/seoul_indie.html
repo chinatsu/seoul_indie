@@ -14,7 +14,7 @@
 <style>
     body {
         font: 14px helvetica neue, helvetica, arial, sans-serif;
-        background: #232634
+        background: {{ colors.background }};
     }
 
     #graph {
@@ -23,18 +23,18 @@
         left: 0;
         bottom: 0;
         float: left;
-        background: #232634;
+        background: {{ colors.background }};
         position: absolute;
         z-index: -5;
     }
 
     #info {
-        background: rgba(0, 0, 0, 0.1);
+        background: color-mix(in srgb, black 10%, {{ colors.background }}A0);
         width: fit-content;
     }
 
     h1, p {
-        color: #fff;
+        color: {{ colors.foreground }};
         margin: 0.2rem;
     }
 </style>
@@ -56,15 +56,15 @@
                 {
                     selector: 'node',
                     style: {
-                        'color': '#c6d0f5',
+                        'color': '{{ colors.foreground }}',
                     }
                 },
 
                 {
                     selector: 'edge',
                     style: {
-                        'line-color': '#626880',
-                        'color': '#a5adce',
+                        'line-color': '{{ colors.edgeDefault }}',
+                        'color': '{{ colors.edgeDefault }}',
                     }
                 },
                 {
@@ -72,7 +72,9 @@
                     style: {
                         'label': 'data(name)',
                         'shape': 'triangle',
-                        'background-color': '#6e738d',
+                        'background-color': '{{ colors.nodePerson }}',
+                        'line-color': '{{ colors.nodePersonStroke }}',
+
                     }
                 },
                 {
@@ -80,7 +82,8 @@
                     style: {
                         'label': 'data(name)',
                         'shape': 'star',
-                        'background-color': '#e5c890'
+                        'background-color': '{{ colors.nodeGroup }}',
+                        'line-color': '{{ colors.nodeGroupStroke }}'
                     }
                 },
                 {
@@ -96,8 +99,8 @@
                     style: {
                         'width': 3,
                         'line-style': 'dashed',
-                        'line-color': '#e5c890',
-                        'target-arrow-color': '#e5c890',
+                        'line-color': '{{ colors.edgeFeatured }}',
+                        'target-arrow-color': '{{ colors.edgeFeatured }}',
                         'target-arrow-shape': 'triangle',
                         'curve-style': 'bezier',
                     }
@@ -106,8 +109,8 @@
                     selector: 'edge[label = "Remixed"]',
                     style: {
                         'line-style': 'dashed',
-                        'line-color': '#ca9ee6',
-                        'target-arrow-color': '#ca9ee6',
+                        'line-color': '{{ colors.edgeRemixed }}',
+                        'target-arrow-color': '{{ colors.edgeRemixed }}',
                         'target-arrow-shape': 'triangle',
                         'curve-style': 'bezier',
                     }
@@ -117,8 +120,8 @@
                     selector: 'edge[label = "Produced"]',
                     style: {
                         'line-style': 'dashed',
-                        'line-color': '#ef9f76',
-                        'target-arrow-color': '#ef9f76',
+                        'line-color': '{{ colors.edgeProduced }}',
+                        'target-arrow-color': '{{ colors.edgeProduced }}',
                         'target-arrow-shape': 'triangle',
                         'curve-style': 'bezier',
                     }
@@ -128,8 +131,8 @@
                     selector: 'edge[label = "Sound director for"]',
                     style: {
                         'line-style': 'dashed',
-                        'line-color': '#ef9f76',
-                        'target-arrow-color': '#ef9f76',
+                        'line-color': '{{ colors.edgeSoundDirectorFor }}',
+                        'target-arrow-color': '{{ colors.edgeSoundDirectorFor }}',
                         'target-arrow-shape': 'triangle',
                         'curve-style': 'bezier',
                     }
@@ -139,8 +142,8 @@
                     selector: 'edge[label = "Sessioned for"]',
                     style: {
                         'line-style': 'dashed',
-                        'line-color': '#85c1dc',
-                        'target-arrow-color': '#85c1dc',
+                        'line-color': '{{ colors.edgeSessionedFor }}',
+                        'target-arrow-color': '{{ colors.edgeSessionedFor }}',
                         'target-arrow-shape': 'triangle',
                         'curve-style': 'bezier',
                     }
@@ -149,7 +152,7 @@
                     selector: 'edge[label = "Collaborated with"]',
                     style: {
                         'line-style': 'dashed',
-                        'line-color': '#8caaee',
+                        'line-color': '{{ colors.edgeCollaboratedWith }}',
                         'target-arrow-shape': 'none',
                         'curve-style': 'bezier',
                     }
@@ -158,8 +161,8 @@
                     selector: 'edge[label = "Gave lessons to"]',
                     style: {
                         'line-style': 'dotted',
-                        'line-color': '#ea999c',
-                        'target-arrow-color': '#ea999c',
+                        'line-color': '{{ colors.edgeGaveLessonsTo }}',
+                        'target-arrow-color': '{{ colors.edgeGaveLessonsTo }}',
                         'target-arrow-shape': 'triangle',
                         'curve-style': 'bezier',
                     }
@@ -173,22 +176,22 @@
                     }
                 },
                 {
-                    selector: 'node.highlight',
+                    selector: 'node[type = "person"].highlight',
                     style: {
-                        'border-color': '#FFF',
-                        'border-width': '2px'
+                        'border-color': '{{ colors.nodePersonStroke }}',
+                        'border-width': '2px',
+                    }
+                },
+                {
+                    selector: 'node[type = "group"].highlight',
+                    style: {
+                        'border-color': '{{ colors.nodeGroupStroke }}',
+                        'border-width': '2px',
                     }
                 },
                 {
                     selector: 'node.semitransp',
                     style: { 'opacity': '0.2' }
-                },
-                {
-                    selector: 'edge.highlight',
-                    style: {
-                        'line-color': '#ffeeee',
-                        'mid-target-arrow-color': '#FFF'
-                    }
                 },
                 {
                     selector: 'edge.semitransp',
