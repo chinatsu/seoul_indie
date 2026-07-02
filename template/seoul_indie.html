@@ -283,12 +283,18 @@
       
 
       cy.on('tap', function(event){
+        
         if (event.target !== cy) {
           highlightNeighborhood(event.target);
           if (target === event.target && event.target.data('url')) {
             window.open(event.target.data('url'), '_blank');
           }
           target = event.target;
+        } else {
+          cy.elements()
+            .removeClass('semitransp')
+            .removeClass('highlight');
+          target = undefined;
         }
       });
 
