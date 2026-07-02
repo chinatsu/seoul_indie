@@ -220,11 +220,6 @@
             },
         });
 
-        cy.on('tap', 'node', function (evt) {
-            if (evt.target.data('url'))
-                window.open(evt.target.data('url'), '_blank');
-        });
-
         function getNeighborhood(node, degree) {
             var result = node;
             for (var i = 0; i < degree; i++) {
@@ -233,23 +228,29 @@
             return result;
         }
 
-        cy.on('mouseover', 'node', function (e) {
-            var highlighted = getNeighborhood(e.target, 3);
+        var target = undefined;
 
-            cy.elements()
-                .difference(highlighted)
-                .addClass('semitransp');
-
-            highlighted.addClass('highlight');
-        });
-
-        cy.on('mouseout', 'node', function (e) {
+        cy.on('tap', function(event){
+            var newTarget = event.target;
             cy.elements()
                 .removeClass('semitransp')
                 .removeClass('highlight');
+            if( newTarget === cy ){
+                target = undefined;
+            } else {
+                if (newTarget.isNode()) {
+                    if (target === newTarget && newTarget.data('url')) {
+                        window.open(newTarget.data('url'), '_blank');
+                    }
+                    target = newTarget;
+                    var highlighted = getNeighborhood(target, 3);
+                    cy.elements()
+                        .difference(highlighted)
+                        .addClass('semitransp');
+                    highlighted.addClass('highlight');
+                }
+            }
         });
-
-
     </script>
 </body>
 
