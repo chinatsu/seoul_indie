@@ -518,6 +518,10 @@ nodes:
   type: group
   name: nuhrokenteeth
   url: https://www.youtube.com/watch?v=SKdsiNVh0kM
+- id: digital_dawn
+  type: group
+  name: Digital Dawn
+  url: https://digitaldawn.bandcamp.com/
 # ------
 # People
 # ------
@@ -1313,13 +1317,13 @@ nodes:
   url: 'https://dbeatdropdeadpowerhead.bandcamp.com'
   connects_to:
   - fog
+  - digital_dawn
 - id: parannoul
   type: person
   name: Parannoul
   url: 'https://parannoul.bandcamp.com'
   connects_to:
-  - target: asian_glow
-    label: Collaborated with
+  - digital_dawn
 - id: victor_ha
   type: person
   name: 하형권 (Victor Ha)
@@ -1412,9 +1416,8 @@ nodes:
   name: BrokenTeeth
   url: 'https://linktr.ee/brokenteeth99'
   connects_to:
-  - target: parannoul
-    label: Sessioned for
   - nuhrokenteeth
+  - digital_dawn
 - id: nuh
   type: person
   name: nuh
@@ -1422,3 +1425,21 @@ nodes:
   connects_to:
   - nuhrokenteeth
   - bulssazo
+- id: fin_fior
+  type: person
+  name: Fin Fior
+  url: 'https://finfior.bandcamp.com/
+  connects_to:
+  - digital_dawn
+- id: della_zyr
+  type: person
+  name: Della Zyr
+  url: 'https://linktr.ee/dellazyr'
+  connects_to:
+  - digital_dawn
+- id: wapddi
+  type: person
+  name: 왑띠 (Wapddi)
+  url: 'https://linktr.ee/wapddi'
+  connects_to:
+  - digital_dawn
