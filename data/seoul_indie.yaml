@@ -514,6 +514,10 @@ nodes:
   type: group
   name: 시나위 (Sinawe)
   url: http://www.maniadb.com/artist/106150
+- id: nuhrokenteeth
+  type: group
+  name: nuhrokenteeth
+  url: https://www.youtube.com/watch?v=SKdsiNVh0kM
 # ------
 # People
 # ------
@@ -1403,3 +1407,18 @@ nodes:
   connects_to:
   - kim_hyun_chul_lee_hyun_woo_yoon_jong_shin_yoon_sang
   - moon_child
+- id: brokenteeth
+  type: person
+  name: Brokenteeth
+  url: 'https://linktr.ee/brokenteeth99'
+  connects_to:
+  - target: parannoul
+    label: Sessioned for
+  - nuhrokenteeth
+- id: nuh
+  type: person
+  name: nuh
+  url: 'https://linktr.ee/nuh_myunghun'
+  connects_to:
+  - nuhrokenteeth
+  - bulssazo
