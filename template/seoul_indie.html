@@ -33,10 +33,23 @@
 
     #searchfield {
         position: absolute;
-        bottom: 0.5rem;
-        left: 50vw;
-        transform: translateY(-50%);
+        bottom: 0rem;
+        left: 0rem;
+        width: 100%;
         z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input {
+          padding: 0.5rem;
+          margin: 0.5rem;
+          background: {{ colors.mutedText }};
+          color: {{ colors.background }};
+          border: none;
+          border-radius: 0.5rem;
+          width: 16rem;
+        }
     }
 
     h1, p {
