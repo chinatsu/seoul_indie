@@ -55,7 +55,8 @@ please think about the directionality: `x` produced `y`, thus the connection sho
 
 - [x] more concise way to define groups and people and the connections between them
 - [ ] support urls for edges
-- [ ] click node to show neighborhood (will break urls the way they work now, but enables neighborhood view on mobile), click anywhere else to clear neighborhood view
+- [x] click node to show neighborhood, click anywhere else to clear neighborhood view
+  - the implementation allows for urls to be opened by clicking the same node twice :)
 - [ ] support more urls for nodes
 - [ ] click node to open a sidebar (desktop)/drawer (mobile) showing any urls associated to the node
 - [ ] click edge to open a sidebar (desktop)/drawer (mobile) showing any urls associated to the edge
