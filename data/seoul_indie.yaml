@@ -498,6 +498,10 @@ nodes:
   type: group
   name: aespa
   url: https://www.instagram.com/aespa_official/
+- id: moonsomoon
+  type: group
+  name: moonsomoon (문소문)
+  url: https://linktr.ee/moonsomoon
 # ------
 # People
 # ------
@@ -1354,3 +1358,29 @@ nodes:
   url: 'https://www.instagram.com/imwinter/'
   connects_to:
   - aespa
+- id: cacophony
+  type: person
+  name: 카코포니 (Cacophony)
+  url: 'https://linktr.ee/cacophony'
+  connects_to:
+  - moonsomoon
+- id: kimilro
+  type: person
+  name: 김일로 (KIMILRO)
+  url: 'https://www.instagram.com/kimilro_/'
+  connects_to:
+  - moonsomoon
+- id: gunwoo
+  type: person
+  name: 건우 (Gunwoo)
+  url: 'https://www.instagram.com/gunwoo_/'
+  connects_to:
+  - moonsomoon
+- id: oh_hyeseok
+  type: person
+  name: 오혜석 (Oh Hyeseok)
+  url: 'https://www.instagram.com/hyeseogi/'
+  connects_to:
+  - jambinai
+  - target: moonsomoon
+    label: Recording engineer for
