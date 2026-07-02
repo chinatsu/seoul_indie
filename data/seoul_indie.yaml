@@ -1372,7 +1372,7 @@ nodes:
   - moonsomoon
 - id: gunwoo
   type: person
-  name: 건우 (Gunwoo)
+  name: 거누 (Gunwoo)
   url: 'http://www.maniadb.com/artist/464099'
   connects_to:
   - moonsomoon
