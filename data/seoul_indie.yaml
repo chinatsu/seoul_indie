@@ -1458,6 +1458,8 @@ nodes:
   connects_to:
   - parasol
   - bongjeingan
+  - target: so_yoon
+    label: Featured
 - id: lim_hyunjae
   type: person
   name: 임현제 (Lim Hyunjae)
