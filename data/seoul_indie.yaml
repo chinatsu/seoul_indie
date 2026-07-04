@@ -457,7 +457,7 @@ nodes:
 - id: chs
   type: group
   name: CHS
-  url: https://www.maniadb.com/artist/502788
+  url: http://www.maniadb.com/artist/502788
 - id: fail_fast
   type: group
   name: Fail Fast
@@ -1264,7 +1264,7 @@ nodes:
 - id: kim_daein
   type: person
   name: 김대인 (Kim Daein)
-  url: https://www.maniadb.com/artist/382658
+  url: http://www.maniadb.com/artist/382658
   connects_to:
   - apollo_18
   - pakk
@@ -1273,7 +1273,7 @@ nodes:
 - id: choi_hyunseok
   type: person
   name: 최현석 (Choi Hyunseok)
-  url: https://www.maniadb.com/artist/502789
+  url: http://www.maniadb.com/artist/502789
   connects_to:
   - apollo_18
   - chs
