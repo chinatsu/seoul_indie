@@ -512,7 +512,7 @@ nodes:
   url: http://www.maniadb.com/artist/102758
 - id: sinawe
   type: group
-  name: 시나위 (Sinawe)
+  name: Sinawe (시나위)
   url: http://www.maniadb.com/artist/106150
 - id: nuhrokenteeth
   type: group
@@ -522,6 +522,14 @@ nodes:
   type: group
   name: Digital Dawn
   url: https://digitaldawn.bandcamp.com/
+- id: bongjeingan
+  type: group
+  name: Bongjeingan (봉제인간)
+  url: https://www.instagram.com/bongjeingan/
+- id: hyukoh
+  type: group
+  name: Hyukoh (혁오)
+  url: https://www.instagram.com/hyukohofficial/
 # ------
 # People
 # ------
@@ -1443,3 +1451,25 @@ nodes:
   url: 'https://linktr.ee/wapddi'
   connects_to:
   - digital_dawn
+- id: chiyoonhae
+  type: person
+  name: 지윤해 (chiyoonhae)
+  url: 'https://www.instagram.com/chiyoonhae/'
+  connects_to:
+  - parasol
+  - bongjeingan
+- id: lim_hyunjae
+  type: person
+  name: 임현제 (Lim Hyunjae)
+  url: 'https://www.instagram.com/rockrockrokk/'
+  connects_to:
+  - bongjeingan
+  - hyukoh
+- id: jeon_iljun
+  type: person
+  name: 전일준 (Jeon Iljun)
+  url: 'https://www.instagram.com/iljun_jeon/'
+  connects_to:
+  - bongjeingan
+  - target: kiha_and_the_faces
+    label: 2012-2018
