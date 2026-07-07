@@ -530,6 +530,67 @@ nodes:
   type: group
   name: Hyukoh (혁오)
   url: https://www.instagram.com/hyukohofficial/
+- id: windy_city
+  type: group
+  name: Windy City (윈디시티)
+  url: https://windycityofficial2023.bandcamp.com/
+- id: hyuntae_kim_quartet
+  type: group
+  name: Hyuntae Kim Quartet (김현태 Quartet)
+  url: https://www.youtube.com/watch?v=U7L7IkrzliY
+- id: dct
+  type: group
+  name: DCT
+  url: https://www.youtube.com/watch?v=msin0NEYDkY
+- id: yunegoo_swing_quartet
+  type: group
+  name: Yunegoo Swing Quartet
+  url: https://www.instagram.com/p/C6XlICkp2jj/
+- id: kwon_nuri_trio
+  type: group
+  name: Kwon Nuri Trio (권누리 Trio)
+  url: https://clubevans.com/bbs/board.php?bo_table=schedule&year=2026&month=5&wr_id=1391
+- id: yonglee_and_the_doltang
+  type: group
+  name: yonglee & the DOLTANG
+  url: https://www.youtube.com/watch?v=NOjMrDjSdf4
+- id: ghost_bookstore
+  type: group
+  name: Ghost Bookstore
+  url: https://ghostbookstore.bandcamp.com/album/ghost-bookstore
+- id: bluebird_quintet
+  type: group
+  name: Bluebird Quintet
+  url: https://www.instagram.com/p/DZ1k108vos6/
+- id: the_blank_shop
+  type: group
+  name: The BLANK Shop
+  url: http://www.maniadb.com/artist/466205
+  connects_to:
+  - target: ha_heonjin
+    label: Featured
+  - target: lee_jin-ah
+    label: Featured
+  - target: sunwoojunga
+    label: Featured
+  - target: yerin_baek
+    label: Featured
+- id: portrait
+  type: group
+  name: Portrait (포트레이트)
+  url: http://www.maniadb.com/artist/140405
+- id: yunseokcheol_trio
+  type: group
+  name: Yunseokcheol Trio (윤석철 Trio)
+  url: https://www.youtube.com/watch?v=DL6KSnbR8so
+- id: heo_ye_chan_trio
+  type: group
+  name: Heo Ye Chan Trio (허예찬 Trio)
+  url: https://www.youtube.com/watch?v=i7jGcVnsu7E
+- id: twice
+  type: group
+  name: TWICE (트와이스)
+  url: https://www.instagram.com/twicetagram/
 # ------
 # People
 # ------
@@ -1142,6 +1203,7 @@ nodes:
   connects_to:
   - asoto_union
   - sisters_barbershop
+  - windy_city
 - id: cha_jeongryeol
   type: person
   name: 차정렬 (Cha Jeongryeol)
@@ -1475,3 +1537,99 @@ nodes:
   - bongjeingan
   - target: kiha_and_the_faces
     label: 2012-2018
+- id: kim_taeguk
+  type: person
+  name: 김태국 (Kim Taeguk)
+  url: 'http://www.maniadb.com/artist/135944'
+  connects_to:
+  - windy_city
+  - hyuntae_kim_quartet
+- id: heo_yechan
+  type: person
+  name: 허예찬 (Heo Ye Chan)
+  url: 'https://www.instagram.com/jazzmachine_yc/'
+  connects_to:
+  - hyuntae_kim_quartet
+  - kwon_nuri_trio
+  - heo_ye_chan_trio
+- id: daniel_kang
+  type: person
+  name: 강다니엘 (Daniel Kang)
+  url: 'https://www.instagram.com/mus1qu_el/'
+  connects_to:
+  - ghost_bookstore
+  - dct
+- id: yunegoo
+  type: person
+  name: 유니구 (Yunegoo)
+  url: 'https://www.instagram.com/yunegoo/'
+  connects_to:
+  - daniel_kang
+  - dct
+  - yunegoo_swing_quartet
+  - bluebird_quintet
+- id: park_sanga
+  type: person
+  name: 박상아 (Park Sanga)
+  url: 'https://www.instagram.com/jazzcats_sanga/'
+  connects_to:
+  - yunegoo_swing_quartet
+- id: kwon_nuri
+  type: person
+  name: 권누리 (Kwon Nuri)
+  url: 'https://www.instagram.com/_new_ri/'
+  connects_to:
+  - kwon_nuri_trio
+- id: dayon_seok
+  type: person
+  name: 석다연 (Dayeon Seok)
+  url: 'https://www.instagram.com/dayumseok/'
+  connects_to:
+  - kwon_nuri
+  - yonglee_and_the_doltang
+- id: kim_hyunil
+  type: person
+  name: 김현일 (Kim Hyunil)
+  url: 'http://www.maniadb.com/artist/102734/'
+  connects_to:
+  - jazzpark_bigband
+  - portrait
+- id: yun_seokcheol
+  type: person
+  name: 윤석철 (Yun Seokcheol)
+  url: 'http://www.maniadb.com/artist/140426'
+  connects_to:
+  - portrait
+  - the_blank_shop
+  - yunseokcheol_trio
+- id: lee_jaekyoon
+  type: person
+  name: 이재균 (Lee Jaekyoon)
+  url: 'https://www.instagram.com/dlworbs_'
+  connects_to:
+  - target: park_sanga
+    label: Sessioned for
+  - target: jihyo
+    label: Sessioned for
+- id: jihyo
+  type: person
+  name: 지효 (Jihyo)
+  url: 'https://www.instagram.com/_ZYOZYO'
+  connects_to:
+  - twice
+- id: sunwoojunga
+  type: person
+  name: 선우정아 (Sunwoo Jung-a)
+  url: https://www.instagram.com/sunwoojunga_official/
+- id: ha_heonjin
+  type: person
+  name: 하헌진 (Ha Heonjin)
+  url: https://www.instagram.com/haheonjin
+- id: yerin_baek
+  type: person
+  name: 백예린 (Yerin Baek)
+  url: 'https://www.instagram.com/yerin_the_genuine'
+- id: lee_jin-ah
+  type: person
+  name: 이진아 (Lee Jin-ah)
+  url: 'https://www.instagram.com/jinahoho/'
