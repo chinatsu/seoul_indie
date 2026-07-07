@@ -590,23 +590,23 @@ nodes:
 - id: kingston_rudieska
   type: group
   name: Kingston Rudieska (킹스턴 루디스카)
-  url: http://www.maniadb.com/artist/151687
+  url: https://www.youtube.com/watch?v=osLEVvjAn4E
 - id: basement_claxxic
   type: group
   name: Basement Claxxic
-  url: http://www.maniadb.com/artist/432318
+  url: https://www.youtube.com/watch?v=Dg0HXDL5QU0
 - id: the_nucleus
   type: group
   name: The Nucleus (뉴클리어스)
-  url: http://www.maniadb.com/artist/408742
+  url: https://www.youtube.com/watch?v=PCPK83FUPS8
 - id: urban_zakapa
   type: group
   name: Urban Zakapa (어반 자카파)
-  url: http://www.maniadb.com/artist/203241
+  url: https://www.youtube.com/watch?v=MfYPKZl7W1w
 - id: wsg_wannabe
   type: group
   name: WSG Wannabe (WSG워너비)
-  url: http://www.maniadb.com/artist/498565
+  url: https://www.youtube.com/watch?v=kZvzjX35KxY
 - id: seeya
   type: group
   name: 'SeeYa (씨야)'
