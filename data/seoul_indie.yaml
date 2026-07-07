@@ -426,10 +426,6 @@ nodes:
   type: group
   name: Yeonji & JeA (연지 & 제아)
   url: http://www.maniadb.com/artist/135308
-- id: seeya
-  type: group
-  name: See Ya (씨야)
-  url: http://www.maniadb.com/artist/134596
 - id: daughter_of_a_rich_family
   type: group
   name: Daughter of a Rich Family (딸부잣집)
@@ -591,6 +587,30 @@ nodes:
   type: group
   name: TWICE (트와이스)
   url: https://www.instagram.com/twicetagram/
+- id: kingston_rudieska
+  type: group
+  name: Kingston Rudieska (킹스턴 루디스카)
+  url: http://www.maniadb.com/artist/151687
+- id: basement_claxxic
+  type: group
+  name: Basement Claxxic
+  url: http://www.maniadb.com/artist/432318
+- id: the_nucleus
+  type: group
+  name: The Nucleus (뉴클리어스)
+  url: http://www.maniadb.com/artist/408742
+- id: urban_zakapa
+  type: group
+  name: Urban Zakapa (어반 자카파)
+  url: http://www.maniadb.com/artist/203241
+- id: wsg_wannabe
+  type: group
+  name: WSG Wannabe (WSG워너비)
+  url: http://www.maniadb.com/artist/498565
+- id: seeya
+  type: group
+  name: 'SeeYa (씨야)'
+  url: https://www.youtube.com/watch?v=I1zhkwIuZ0A
 # ------
 # People
 # ------
@@ -1633,3 +1653,45 @@ nodes:
   type: person
   name: 이진아 (Lee Jin-ah)
   url: 'https://www.instagram.com/jinahoho/'
+- id: you_sunhwa
+  type: person
+  name: 유선화 (You Sunhwa)
+  url: 'http://www.maniadb.com/artist/107643'
+  connects_to:
+  - propeller_21
+  - kingston_rudieska
+- id: bae_seonyong
+  type: person
+  name: 배선용 (Bae Seonyong)
+  url: 'http://www.maniadb.com/artist/393087'
+  connects_to:
+  - kingston_rudieska
+  - basement_claxxic
+- id: kim_jaewoo
+  type: person
+  name: 김재우 (Kim Jaewoo)
+  url: http://www.maniadb.com/artist/409062
+  connects_to:
+  - basement_claxxic
+  - the_nucleus
+- id: choi_jaeman
+  type: person
+  name: 최재만 (Choi Jaeman)
+  url: http://www.maniadb.com/artist/383211
+  connects_to:
+  - the_nucleus
+  - urban_zakapa
+- id: jo_hyunah
+  type: person
+  name: 조현아 (Jo Hyunah)
+  url: https://www.instagram.com/tenomahj/
+  connects_to:
+  - urban_zakapa
+  - wsg_wannabe
+- id: lee_boram
+  type: person
+  name: 이보람 (Lee Bo-ram)
+  url: 'https://www.youtube.com/watch?v=XSpsouH22Hc'
+  connects_to:
+  - wsg_wannabe
+  - seeya
