@@ -1704,7 +1704,7 @@ nodes:
   name: 조석형 (Cho Seokhyeong)
   url: 'https://rateyourmusic.com/artist/%EC%A1%B0%EC%84%9D%ED%98%95'
   connects_to:
-  - uruk_and_the_gypsies
+  - ureuk_and_the_gypsies
   - target: khc
     label: Sessioned for
 - id: khc
