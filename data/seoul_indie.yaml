@@ -611,6 +611,9 @@ nodes:
   type: group
   name: 'SeeYa (씨야)'
   url: https://www.youtube.com/watch?v=I1zhkwIuZ0A
+- id: ureuk_and_the_gypsies
+  type: group
+  name: Ureuk and The Gypsies (우륵과 풍각쟁이들)
 # ------
 # People
 # ------
@@ -1521,6 +1524,7 @@ nodes:
   url: 'https://finfior.bandcamp.com/'
   connects_to:
   - digital_dawn
+  - ureuk_and_the_gypsies
 - id: della_zyr
   type: person
   name: Della Zyr
@@ -1695,3 +1699,15 @@ nodes:
   connects_to:
   - wsg_wannabe
   - seeya
+- id: cho_seokhyeong
+  type: person
+  name: 조석형 (Cho Seokhyeong)
+  url: 'https://rateyourmusic.com/artist/%EC%A1%B0%EC%84%9D%ED%98%95'
+  connects_to:
+  - uruk_and_the_gypsies
+  - target: khc
+    label: Sessioned for
+- id: khc
+  type: person
+  name: khc
+  url: 'https://khchoi.bandcamp.com/'
