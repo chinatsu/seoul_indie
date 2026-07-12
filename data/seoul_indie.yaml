@@ -619,6 +619,10 @@ nodes:
   type: group
   name: wiki
   url: https://thisisaboutwiki.bandcamp.com/album/wiki-way-1st-demo
+- id: gong_jong_geu_neul
+  type: group
+  name: 공중그늘 (Gong Jong Geu Neul)
+  url: https://www.instagram.com/gongjoonggeuneul/
 # ------
 # People
 # ------
@@ -1224,6 +1228,7 @@ nodes:
   url: https://haeinleeofficial.cargo.site/
   connects_to:
   - wiki
+  - gong_jong_geu_neul
 - id: kim_munhui
   type: person
   name: 김문희 (Kim Munhui)
