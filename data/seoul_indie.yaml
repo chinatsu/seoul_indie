@@ -1218,6 +1218,12 @@ nodes:
   - wiki
   - target: kuang_program
     label: Collaborated with
+- id: lee_haein
+  type: person
+  name: 이해인 (Lee Haein)
+  url: https://haeinleeofficial.cargo.site/
+  connects_to:
+  - wiki
 - id: kim_munhui
   type: person
   name: 김문희 (Kim Munhui)
