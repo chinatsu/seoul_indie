@@ -615,6 +615,10 @@ nodes:
   type: group
   name: Ureuk and The Gypsies (우륵과 풍각쟁이들)
   url: https://www.youtube.com/watch?v=-QZeqV49x_s
+- id: wiki
+  type: group
+  name: wiki
+  url: https://thisisaboutwiki.bandcamp.com/album/wiki-way-1st-demo
 # ------
 # People
 # ------
@@ -1211,6 +1215,7 @@ nodes:
   url: https://linktr.ee/goh_woo
   connects_to:
   - organic_beer
+  - wiki
   - target: kuang_program
     label: Collaborated with
 - id: kim_munhui
