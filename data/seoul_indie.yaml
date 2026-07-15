@@ -623,6 +623,10 @@ nodes:
   type: group
   name: 공중그늘 (Gong Joong Geu Neul)
   url: https://www.instagram.com/gongjoonggeuneul/
+- id: computer_blue
+  type: group
+  name: Computer Blue
+  url: https://noslackrecords.bandcamp.com/album/dots-hacked-2
 # ------
 # People
 # ------
@@ -905,6 +909,13 @@ nodes:
   connects_to:
   - loros
   - zzzaam
+- id: pika
+  type: person
+  name: Pika
+  url: https://noslackrecords.bandcamp.com/album/rip-van-winkle-ep
+  connects_to:
+  - loros
+  - computer_blue
 - id: choe_sohui
   type: person
   name: 최소희 (Choe Sohui)
@@ -1728,3 +1739,9 @@ nodes:
   type: person
   name: khc
   url: 'https://khchoi.bandcamp.com/'
+- id: livigesh
+  type: person
+  name: 리비게쉬 (Livigesh)
+  url: 'https://linktr.ee/livigesh'
+  connects_to:
+  - computer_blue
