@@ -47,6 +47,9 @@ nodes:
   type: group
   name: 모임 별 (Byul.org)
   url: https://www.youtube.com/watch?v=BZtWwwKeqXQ
+  connects_to:
+  - target: kirara
+    label: Remixed
 - id: pds
   type: group
   name: Puredigitalsilence
@@ -1441,9 +1444,14 @@ nodes:
   - digital_dawn
 - id: parannoul
   type: person
-  name: Parannoul
+  name: 파란노을 (Parannoul)
   url: 'https://parannoul.bandcamp.com'
   connects_to:
+  - target: asian_glow
+    label: Collaborated with
+  connects_to:
+  - target: byul_org
+    label: Collaborated with
   - digital_dawn
 - id: victor_ha
   type: person
@@ -1739,6 +1747,9 @@ nodes:
   type: person
   name: khc
   url: 'https://khchoi.bandcamp.com/'
+  connects_to:
+  - target: parannoul
+    label: Sessioned for
 - id: livigesh
   type: person
   name: 리비게쉬 (Livigesh)
