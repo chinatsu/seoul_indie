@@ -832,7 +832,8 @@ nodes:
   name: 조윤석 (Jo Yunseok)
   url: http://www.maniadb.com/artist/111269
   connects_to:
-  - bulssazo
+  - target: bulssazo
+    label: 2005
   - pretty_hwang_band
 - id: ko_kyeongcheon
   type: person
