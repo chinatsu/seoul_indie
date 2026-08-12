@@ -630,6 +630,10 @@ nodes:
   type: group
   name: Computer Blue
   url: https://noslackrecords.bandcamp.com/album/dots-hacked-2
+- id: oir
+  type: group
+  name: Oir
+  url: https://oirmusic2.bandcamp.com
 # ------
 # People
 # ------
@@ -717,6 +721,14 @@ nodes:
   - wall_wall
   - target: haepa
     label: Produced
+- id: cho_taesang
+  type: person
+  name: 조태상 (Cho TaeSang)
+  url: https://www.maniadb.com/artist/398267
+  connects_to:
+  - byul_org
+  - target: jowall
+    label: Brothers
 - id: ninaian
   type: person
   name: 박현민 (Ninaian)
@@ -1442,6 +1454,9 @@ nodes:
   connects_to:
   - fog
   - digital_dawn
+  - oir
+  - target: parannoul
+    label: Sessioned for
 - id: parannoul
   type: person
   name: 파란노을 (Parannoul)
@@ -1547,6 +1562,8 @@ nodes:
   connects_to:
   - nuhrokenteeth
   - digital_dawn
+  - target: parannoul
+    label: Sessioned for
 - id: nuh
   type: person
   name: nuh
@@ -1561,6 +1578,9 @@ nodes:
   connects_to:
   - digital_dawn
   - ureuk_and_the_gypsies
+  - oir
+  - target: parannoul
+    label: Sessioned for
 - id: della_zyr
   type: person
   name: Della Zyr
@@ -1741,6 +1761,7 @@ nodes:
   url: 'https://rateyourmusic.com/artist/%EC%A1%B0%EC%84%9D%ED%98%95'
   connects_to:
   - ureuk_and_the_gypsies
+  - oir
   - target: khc
     label: Sessioned for
 - id: khc
