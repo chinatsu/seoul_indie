@@ -827,14 +827,6 @@ nodes:
   url: http://www.maniadb.com/artist/101319
   connects_to:
   - delispice
-- id: jo_yunseok
-  type: person
-  name: 조윤석 (Jo Yunseok)
-  url: http://www.maniadb.com/artist/111269
-  connects_to:
-  - target: bulssazo
-    label: 2005
-  - pretty_hwang_band
 - id: ko_kyeongcheon
   type: person
   name: 고경천 (Ko Kyeongcheon)
@@ -974,6 +966,9 @@ nodes:
   connects_to:
   - lucid_fall
   - misoni
+  - target: bulssazo
+    label: 2005
+  - pretty_hwang_band
 - id: seong_giwan
   type: person
   name: 성기완 (Seong Giwan)
