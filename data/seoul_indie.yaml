@@ -634,6 +634,10 @@ nodes:
   type: group
   name: Oir
   url: https://oirmusic2.bandcamp.com
+- id: the_cookin_trio
+  type: group
+  name: The Cookin' Trio
+  url: https://dacook.bandcamp.com
 # ------
 # People
 # ------
@@ -1453,6 +1457,8 @@ nodes:
   - oir
   - target: parannoul
     label: Sessioned for
+  - target: fin_fior
+    label: Collaborated with
 - id: parannoul
   type: person
   name: 파란노을 (Parannoul)
@@ -1773,3 +1779,19 @@ nodes:
   url: 'https://linktr.ee/livigesh'
   connects_to:
   - computer_blue
+- id: yordan
+  type: person
+  name: yordan
+  url: https://rateyourmusic.com/~makerecordwith256albums
+  connects_to:
+  - the_cookin_trio
+  - ureuk_and_the_gypsies
+  - target: parannoul
+    label: Sessioned for
+- id: kim_jihong
+  type: person
+  name: 김지홍 (Kim Jihong)
+  url: ''
+  connects_to:
+  - the_cookin_trio
+  - ureuk_and_the_gypsies
