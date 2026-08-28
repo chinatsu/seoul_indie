@@ -47,6 +47,9 @@ nodes:
   type: group
   name: 모임 별 (Byul.org)
   url: https://www.youtube.com/watch?v=BZtWwwKeqXQ
+  connects_to:
+  - target: kirara
+    label: Remixed
 - id: pds
   type: group
   name: Puredigitalsilence
@@ -627,6 +630,14 @@ nodes:
   type: group
   name: Computer Blue
   url: https://noslackrecords.bandcamp.com/album/dots-hacked-2
+- id: oir
+  type: group
+  name: Oir
+  url: https://oirmusic2.bandcamp.com
+- id: the_cookin_trio
+  type: group
+  name: The Cookin' Trio
+  url: https://dacook.bandcamp.com
 # ------
 # People
 # ------
@@ -714,6 +725,14 @@ nodes:
   - wall_wall
   - target: haepa
     label: Produced
+- id: cho_taesang
+  type: person
+  name: 조태상 (Cho TaeSang)
+  url: https://www.maniadb.com/artist/398267
+  connects_to:
+  - byul_org
+  - target: jowall
+    label: Brothers
 - id: ninaian
   type: person
   name: 박현민 (Ninaian)
@@ -814,10 +833,11 @@ nodes:
   - delispice
 - id: jo_yunseok
   type: person
-  name: 조윤석 (Jo Yunseok)
+  name: 조윤석 (Jo Yunseok) (of Bulssazo)
   url: http://www.maniadb.com/artist/111269
   connects_to:
-  - bulssazo
+  - target: bulssazo
+    label: 2005
   - pretty_hwang_band
 - id: ko_kyeongcheon
   type: person
@@ -951,9 +971,9 @@ nodes:
   connects_to:
   - firestorm
   - the_patience
-- id: jo_yoonseok
+- id: cho_yoonseok
   type: person
-  name: 조윤석 (Jo Yoonseok)
+  name: 조윤석 (Cho Yoon-Seok) (of Lucid Fall)
   url: http://www.maniadb.com/artist/111268
   connects_to:
   - lucid_fall
@@ -1439,11 +1459,22 @@ nodes:
   connects_to:
   - fog
   - digital_dawn
+  - oir
+  - target: parannoul
+    label: Sessioned for
+  - target: fin_fior
+    label: Collaborated with
 - id: parannoul
   type: person
-  name: Parannoul
+  name: 파란노을 (Parannoul)
   url: 'https://parannoul.bandcamp.com'
   connects_to:
+  - target: asian_glow
+    label: Collaborated with
+  - target: byul_org
+    label: Collaborated with
+  - target: brokenteeth
+    label: Sessioned for
   - digital_dawn
 - id: victor_ha
   type: person
@@ -1539,6 +1570,8 @@ nodes:
   connects_to:
   - nuhrokenteeth
   - digital_dawn
+  - target: parannoul
+    label: Sessioned for
 - id: nuh
   type: person
   name: nuh
@@ -1553,6 +1586,9 @@ nodes:
   connects_to:
   - digital_dawn
   - ureuk_and_the_gypsies
+  - oir
+  - target: parannoul
+    label: Sessioned for
 - id: della_zyr
   type: person
   name: Della Zyr
@@ -1733,15 +1769,35 @@ nodes:
   url: 'https://rateyourmusic.com/artist/%EC%A1%B0%EC%84%9D%ED%98%95'
   connects_to:
   - ureuk_and_the_gypsies
+  - oir
   - target: khc
     label: Sessioned for
 - id: khc
   type: person
   name: khc
   url: 'https://khchoi.bandcamp.com/'
+  connects_to:
+  - target: parannoul
+    label: Sessioned for
 - id: livigesh
   type: person
   name: 리비게쉬 (Livigesh)
   url: 'https://linktr.ee/livigesh'
   connects_to:
   - computer_blue
+- id: yordan
+  type: person
+  name: yordan
+  url: https://rateyourmusic.com/~makerecordwith256albums
+  connects_to:
+  - the_cookin_trio
+  - ureuk_and_the_gypsies
+  - target: parannoul
+    label: Sessioned for
+- id: kim_jihong
+  type: person
+  name: 김지홍 (Kim Jihong)
+  url: ''
+  connects_to:
+  - the_cookin_trio
+  - ureuk_and_the_gypsies
