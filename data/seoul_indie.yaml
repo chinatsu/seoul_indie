@@ -965,14 +965,18 @@ nodes:
   - the_patience
 - id: jo_yoonseok
   type: person
-  name: 조윤석 (Jo Yoonseok)
+  name: 조윤석 (Jo Yoonseok) (of Lucid Fall)
   url: http://www.maniadb.com/artist/111268
   connects_to:
   - lucid_fall
   - misoni
+  - pretty_hwang_band
+- id: jo_yoonseok_bulssazo
+  type:
+  name: 조윤석 (Jo Yoonseok) (of Bulssazo)
+  connects_to:
   - target: bulssazo
     label: 2005
-  - pretty_hwang_band
 - id: seong_giwan
   type: person
   name: 성기완 (Seong Giwan)
@@ -1466,9 +1470,10 @@ nodes:
   connects_to:
   - target: asian_glow
     label: Collaborated with
-  connects_to:
   - target: byul_org
     label: Collaborated with
+  - target: brokenteeth
+    label: Sessioned for
   - digital_dawn
 - id: victor_ha
   type: person
