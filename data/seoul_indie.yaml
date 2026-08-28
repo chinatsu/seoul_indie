@@ -833,7 +833,7 @@ nodes:
   - delispice
 - id: jo_yunseok
   type: person
-  name: 조윤석 (Jo Yunseok)
+  name: 조윤석 (Jo Yunseok) (of Bulssazo)
   url: http://www.maniadb.com/artist/111269
   connects_to:
   - target: bulssazo
@@ -971,14 +971,13 @@ nodes:
   connects_to:
   - firestorm
   - the_patience
-- id: jo_yoonseok
+- id: cho_yoonseok
   type: person
-  name: 조윤석 (Jo Yoonseok) (of Lucid Fall)
+  name: 조윤석 (Cho Yoon-Seok) (of Lucid Fall)
   url: http://www.maniadb.com/artist/111268
   connects_to:
   - lucid_fall
   - misoni
-  - pretty_hwang_band
 - id: seong_giwan
   type: person
   name: 성기완 (Seong Giwan)
