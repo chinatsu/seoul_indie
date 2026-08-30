@@ -5,15 +5,15 @@ nodes:
 # ------
 - id: daydream
   type: group
-  name: 데이드림 (Daydream)
+  name: Daydream (데이드림)
   url: https://www.youtube.com/watch?v=SeeH3YffpNM&t=1546s
 - id: electricity_flowing
   type: group
-  name: 전기흐른 (Electricity Flowing)
+  name: Electricity Flowing (전기흐른)
   url: https://www.youtube.com/watch?v=Ayl5hUiIFgk
 - id: frenzy
   type: group
-  name: 프렌지 (Frenzy)
+  name: Frenzy (프렌지)
   url: https://www.youtube.com/watch?v=KPb4H4IsLKk
 - id: isle
   type: group
@@ -21,11 +21,11 @@ nodes:
   url: https://www.youtube.com/watch?v=fq9eu3dFaO4
 - id: siwarainbow
   type: group
-  name: 시와무지개 (Siwarainbow)
+  name: Siwarainbow (시와무지개)
   url: https://www.youtube.com/watch?v=0XLR1L7reJQ
 - id: adultchild
   type: group
-  name: 어른아이 (Adultchild)
+  name: Adultchild (어른아이)
   url: https://www.youtube.com/watch?v=dRaqtelO7Io
 - id: sklaventanz
   type: group
@@ -41,11 +41,11 @@ nodes:
   url: https://www.youtube.com/watch?v=TDVCa3EkUf4
 - id: sokot_band
   type: group
-  name: 우리는 속옷도 생겼고 여자도 늘었다네 (Sokot band)
+  name: Sokot band (우리는 속옷도 생겼고 여자도 늘었다네)
   url: https://www.youtube.com/watch?v=ykBMnixAAAE
 - id: byul_org
   type: group
-  name: 모임 별 (Byul.org)
+  name: Byul.org (모임 별)
   url: https://www.youtube.com/watch?v=BZtWwwKeqXQ
   connects_to:
   - target: kirara
@@ -76,66 +76,66 @@ nodes:
   url: https://www.youtube.com/watch?v=3A6E0UwQ0kA
 - id: bulssazo
   type: group
-  name: 불싸조 (Bulssazo)
+  name: Bulssazo (불싸조)
   url: https://www.youtube.com/watch?v=UAUpZzdTFls
 - id: pretty_hwang_band
   type: group
-  name: 황신혜밴드 (Pretty Hwang Band)
+  name: Pretty Hwang Band (황신혜밴드)
   url: https://www.youtube.com/watch?v=pCgmj7LwUqY
 - id: misoni
   type: group
-  name: 미선이 (Misoni)
+  name: Misoni (미선이)
   url: https://www.youtube.com/watch?v=ISInjAh-uFk
 - id: 9_and_numbers
   type: group
-  name: 9와 숫자들 (9 and the Numbers)
+  name: 9 and the Numbers (9와 숫자들)
   url: https://www.youtube.com/watch?v=0tJjrSaxq0k
 - id: electron_sheep
   type: group
-  name: 전자양 (Electron Sheep)
+  name: Electron Sheep (전자양)
   url: https://www.youtube.com/watch?v=CjMrKHO1wvQ
 - id: julia_hart
   type: group
-  name: 줄리아하트 (Julia Hart)
+  name: Julia Hart (줄리아하트)
   url: https://www.youtube.com/watch?v=l0Fasn1lYdM
   connects_to:
   - target: erena_jung
     label: Featured
 - id: autumn_vacation
   type: group
-  name: 가을방학 (Autumn Vacation)
+  name: Autumn Vacation (가을방학)
   url: https://www.youtube.com/watch?v=_JZtNfmABl4
 - id: yeongene_and_bmx_bandits
   type: group
-  name: 연진 앤드 비엠엑스 밴디츠 (Yeongene & BMX Bandits)
+  name: Yeongene & BMX Bandits (연진 앤드 비엠엑스 밴디츠)
   url: https://www.youtube.com/watch?v=rzALHJBgtNo
 - id: broccoli_you_too
   type: group
-  name: 브로콜리 너마저 (Broccoli,you too)
+  name: Broccoli, you too (브로콜리 너마저)
   url: https://www.youtube.com/watch?v=mSd3dbU9RWg
 - id: linus_blanket
   type: group
-  name: 라이너스의 담요 (Linus' Blanket)
+  name: Linus' Blanket (라이너스의 담요)
   url: https://www.youtube.com/watch?v=77YJUIgP2n4
 - id: parasol
   type: group
-  name: 파라솔 (Parasol)
+  name: Parasol (파라솔)
   url: https://www.youtube.com/watch?v=87nxRT7fTdw
 - id: trampauline
   type: group
-  name: 트램폴린 (Trampauline)
+  name: Trampauline (트램폴린)
   url: https://www.youtube.com/watch?v=LMS1XHPXULk
 - id: bluestream
   type: group
-  name: 푸르내 (Bluestream)
+  name: Bluestream (푸르내)
   url: https://www.youtube.com/watch?v=mCmOHecyGYQ
 - id: 3rd_line_butterfly
   type: group
-  name: 3호선 버터플라이 (3rd Line Butterfly)
+  name: 3rd Line Butterfly (3호선 버터플라이)
   url: https://www.youtube.com/watch?v=DlQvaV2B7VI
 - id: huckleberry_finn
   type: group
-  name: 허클베리 핀 (Huckleberry Finn)
+  name: Huckleberry Finn (허클베리 핀)
   url: https://www.youtube.com/watch?v=-xFDquLoNv4
 - id: 99_band
   type: group
@@ -151,15 +151,15 @@ nodes:
   url: http://www.maniadb.com/artist/426839
 - id: the_freaks
   type: group
-  name: 얄개들 (The Freaks)
+  name: The Freaks (얄개들)
   url: http://www.maniadb.com/artist/379162
 - id: loros
   type: group
-  name: 로로스 (Loro's)
+  name: Loro's (로로스)
   url: http://www.maniadb.com/artist/136963
 - id: zzzaam
   type: group
-  name: 잠 (ZzzAam)
+  name: ZzzAam (잠)
   url: http://www.maniadb.com/artist/114982
 - id: the_patience
   type: group
@@ -171,19 +171,19 @@ nodes:
   url: http://www.maniadb.com/artist/143922
 - id: sisters_barbershop
   type: group
-  name: 언니네 이발관 (Sister's Barbershop)
+  name: Sister's Barbershop (언니네 이발관)
   url: http://www.maniadb.com/artist/106912
 - id: cosmos
   type: group
-  name: 코스모스 (Cosmos)
+  name: Cosmos (코스모스)
   url: http://www.maniadb.com/artist/113764
 - id: 13_steps
   type: group
-  name: 13 스텝스 (13 Steps)
+  name: 13 Steps (13 스텝스)
   url: http://www.maniadb.com/artist/100008
 - id: 100_blossom_club
   type: group
-  name: 백화난만조 (One Hundred Blossom Club)
+  name: One Hundred Blossom Club (백화난만조)
   url: http://www.maniadb.com/artist/413391
 - id: cockrasher
   type: group
@@ -199,7 +199,7 @@ nodes:
   url: http://www.maniadb.com/artist/114926
 - id: nodance
   type: group
-  name: 노땐스 (Nodance)
+  name: Nodance (노땐스)
   url: http://www.maniadb.com/artist/103142
 - id: mo_tet
   type: group
@@ -207,31 +207,31 @@ nodes:
   url: http://www.maniadb.com/artist/155305
 - id: nohys
   type: group
-  name: 노이스 (Nohys)
+  name: Nohys (노이스)
   url: http://www.maniadb.com/artist/507950
 - id: casker
   type: group
-  name: 캐스커 (Casker)
+  name: Casker (캐스커)
   url: http://www.maniadb.com/artist/112371
 - id: bamshinsa
   type: group
-  name: 밤신사 (Bamshinsa)
+  name: Bamshinsa (밤신사)
   url: http://www.maniadb.com/artist/421200
 - id: leenalchi
   type: group
-  name: 이날치 (Leenalchi)
+  name: Leenalchi (이날치)
   url: http://www.maniadb.com/artist/456184
 - id: bogsunga
   type: group
-  name: 복숭아 (Bogsunga)
+  name: Bogsunga (복숭아)
   url: http://www.maniadb.com/artist/136030
 - id: beyond_the_age
   type: group
-  name: 비욘드 에이지 (Beyond the Age)
+  name: Beyond the Age (비욘드 에이지)
   url: http://www.maniadb.com/artist/105276
 - id: soul_take
   type: group
-  name: 소울 테이크 (Soul Take)
+  name: Soul Take (소울 테이크)
   url: http://www.maniadb.com/artist/114653
 - id: flux
   type: group
@@ -239,19 +239,19 @@ nodes:
   url: http://www.maniadb.com/artist/113931
 - id: se_so_neon
   type: group
-  name: 새소년 (Se So Neon)
+  name: Se So Neon (새소년)
   url: http://www.maniadb.com/artist/430310
 - id: kiha_and_the_faces
   type: group
-  name: 장기하와 얼굴들 (KiHa and the Faces)
+  name: KiHa and the Faces (장기하와 얼굴들)
   url: http://www.maniadb.com/artist/153783
 - id: lucid_fall
   type: group
-  name: 루시드 폴 (Lucid Fall)
+  name: Lucid Fall (루시드 폴)
   url: http://www.maniadb.com/artist/103541
 - id: apollo_18
   type: group
-  name: 아폴로 18 (Apollo 18)
+  name: Apollo 18 (아폴로 18)
   url: http://www.maniadb.com/artist/156859
 - id: no_excuse
   type: group
@@ -279,11 +279,11 @@ nodes:
   url: http://www.maniadb.com/artist/155176
 - id: master_musik
   type: group
-  name: 불길한 저음 (Master Musik)
+  name: Master Musik (불길한 저음)
   url: http://www.balloonnneedle.com/mastermusik.html
 - id: sunkyeol
   type: group
-  name: 선결 (Sunkyeol)
+  name: Sunkyeol (선결)
   url: https://www.instagram.com/sunkyeol
 - id: 404_band
   type: group
@@ -291,11 +291,11 @@ nodes:
   url: http://www.maniadb.com/artist/422825
 - id: bihaengsun
   type: group
-  name: 비행선 (Bihaengsun)
+  name: Bihaengsun (비행선)
   url: http://www.maniadb.com/artist/105283
 - id: pipi_band
   type: group
-  name: 삐삐밴드 (Pipi Band)
+  name: Pipi Band (삐삐밴드)
   url: http://www.maniadb.com/artist/105297
 - id: wonder_bird
   type: group
@@ -307,7 +307,7 @@ nodes:
   url: http://www.maniadb.com/artist/424909
 - id: dosirak_commandos
   type: group
-  name: 도시락특공대 (Dosirak Commandos)
+  name: Dosirak Commandos (도시락특공대)
   url: http://www.maniadb.com/artist/103339
 - id: smacksoft
   type: group
@@ -347,11 +347,11 @@ nodes:
   url: https://maansun.com/hellivision
 - id: kuang_program
   type: group
-  name: 쾅프로그램 (Kuang Program)
+  name: Kuang Program (쾅프로그램)
   url: https://maansun.com/kuangprogram
 - id: bamseom_pirates
   type: group
-  name: 밤섬해적단 (Bamseom Pirates)
+  name: Bamseom Pirates (밤섬해적단)
   url: http://www.maniadb.com/artist/384576
 - id: organic_beer
   type: group
@@ -363,7 +363,7 @@ nodes:
   url: https://www.youtube.com/watch?v=GmRsKQnGVnM
 - id: asoto_union
   type: group
-  name: 아소토 유니온 (Asoto Union)
+  name: Asoto Union (아소토 유니온)
   url: https://www.youtube.com/watch?v=oLYAfaSzLC8
 - id: social_quality
   type: group
