@@ -1826,7 +1826,7 @@ nodes:
   - night_off
 - id: eaeon
   type: person
-  name: 이이언 (eAeon)
+  name: eAeon
   url: 'https://www.instagram.com/eaeon'
   connects_to:
   - night_off
