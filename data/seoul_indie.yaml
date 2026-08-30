@@ -624,7 +624,7 @@ nodes:
   url: https://thisisaboutwiki.bandcamp.com/album/wiki-way-1st-demo
 - id: gong_joong_geu_neul
   type: group
-  name: 공중그늘 (Gong Joong Geu Neul)
+  name: Gong Joong Geu Neul (공중그늘)
   url: https://www.instagram.com/gongjoonggeuneul/
 - id: computer_blue
   type: group
@@ -638,6 +638,22 @@ nodes:
   type: group
   name: The Cookin' Trio
   url: https://dacook.bandcamp.com
+- id: night_off
+  type: group
+  name: Night Off
+  url: https://www.youtube.com/watch?v=NQaYFszwtmM
+- id: mot
+  type: group
+  name: mot (못)
+  url: https://www.youtube.com/watch?v=D7ZqDX7JXQY
+- id: bat_apt
+  type: group
+  name: Bat Apt. (박쥐단지)
+  url: https://www.youtube.com/watch?v=uZ3oK4eXrrs
+- id: silica_gel
+  type: group
+  name: Silica Gel (실리카겔)
+  url: https://www.instagram.com/silicagel.official/
 # ------
 # People
 # ------
@@ -1801,3 +1817,31 @@ nodes:
   connects_to:
   - the_cookin_trio
   - ureuk_and_the_gypsies
+- id: lee neungryong
+  type: person
+  name: 이능룡 (Lee Neungryong)
+  url: 'https://www.instagram.com/neungryong_lee'
+  connects_to:
+  - sisters_barbershop
+  - night_off
+- id: eaeon
+  type: person
+  name: 이이언 (eAeon)
+  url: 'https://www.instagram.com/eaeon'
+  connects_to:
+  - night_off
+  - mot
+  - bat_apt
+- id: kim_hanjoo
+  type: person
+  name: 김한주 (Kim Hanjoo)
+  url: 'https://www.instagram.com/kimhanjooo/'
+  connects_to:
+  - bat_apt
+  - silica_gel
+- id: kim_doeon
+  type: person
+  name: 김도언 (Kim Doeon)
+  url: 'https://www.instagram.com/zamzako/'
+  connects_to:
+  - bat_apt
